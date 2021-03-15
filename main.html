@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <div class="overlay">
+    <div class="body-wrapper" id="body-wrapper">
       <header class="main-header">
         <img class="big-circle" src="img/big-circle.svg" />
         <img class="small-circle" src="img/small-circle.svg" />
@@ -37,7 +37,7 @@
           </nav>
           <div class="main-contract">
             <h1>Заключить договор и забыть о вопросах логистики</h1>
-            <button class="btn">Оставить заявку</button>
+            <button class="btn" id="modal-btn">Оставить заявку</button>
           </div>
         </div>
       </header>
@@ -65,9 +65,11 @@
                   <img src="img/values.svg" />
                   <span>
                     <h3>Ценности</h3>
-                    <span id="about-values-descr">СДЭК – это МЫ. Мы любим свою работу и делаем ее хорошо. Мы
-                    помогаем и поддерживаем друг друга. От каждого из нас
-                    зависит результат.</span>
+                    <span id="about-values-descr"
+                      >СДЭК – это МЫ. Мы любим свою работу и делаем ее хорошо.
+                      Мы помогаем и поддерживаем друг друга. От каждого из нас
+                      зависит результат.</span
+                    >
                   </span>
                 </div>
                 <ul id="about-values-dots">
@@ -129,22 +131,35 @@
         </div>
       </main>
     </div>
-    <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">
-        Закрыть
-      </button>
-      <img class="small-circle" src="img/small-circle.svg" />
-      <h2 class="modal-content-title">Подготовить договор</h2>
-      <form class="form-user" action="#" method="POST">
-        <input class="icon-user" type="text" name="email" placeholder="Email" />
-        <input
-          class="phone-user"
-          type="tel"
-          name="phone"
-          placeholder="Телефон"
-        />
-        <button class="btn btn-send" type="submit">Отправить</button>
-      </form>
+    <div class="overlay" id="overlay">
+      <div class="overlay-blocker" id="overlay-blocker"></div>
+      <div class="modal-content" id="modal-content">
+        <button
+          class="modal-content-close"
+          type="button"
+          title="Закрыть"
+          id="modal-content-close"
+        >
+          Закрыть
+        </button>
+        <img class="small-circle" src="img/small-circle.svg" />
+        <h2 class="modal-content-title">Подготовить договор</h2>
+        <form class="form-user" action="#" method="POST">
+          <input
+            class="icon-user"
+            type="text"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="phone-user"
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <button class="btn btn-send" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
