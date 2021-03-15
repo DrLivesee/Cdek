@@ -314,6 +314,8 @@ a {
     color: white;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    transition: background-color 0.3s ease;
 }
 
 .about-us__right div:last-child {
@@ -341,6 +343,7 @@ a {
     font-size: 14px;
     line-height: 18px;
     letter-spacing: 3px;
+    transition: opacity 0.2s ease;
 }
 
 
