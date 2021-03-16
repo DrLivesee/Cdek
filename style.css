@@ -204,7 +204,7 @@ ul {
   display: flex;
   position: absolute;
   top: 455px;
-  left: 280px;
+  left: 270px;
 }
 
 li {
@@ -214,27 +214,22 @@ li {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: transparent;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
-  border: 2px solid grey;
-  opacity: 0.7;
-}
-
-li.active {
-  background: rgb(20, 20, 20);
-  border: none;
-  opacity: 0.8;
-}
-
-li.active:hover {
-  background-color: rgb(20, 20, 20);
+  border: 2px solid white;
   opacity: 0.8;
 }
 
 li:hover {
-  background: grey;
+  background-color: rgba(211, 211, 211, 0.8);
 }
+
+li.active {
+  background-color: white;
+  opacity: 1;
+  pointer-events: none;
+}
+
 
 /* Cooperation */
 
@@ -395,7 +390,7 @@ li:hover {
   opacity: 0.5;
 }
 
-.form-user input[type="text"],
+.form-user input[type="email"],
 .form-user input[type="tel"] {
   width: 100%;
   margin: 0;
@@ -417,7 +412,7 @@ li:hover {
   font-weight: bold;
 }
 
-.form-user input[type="text"]:focus,
+.form-user input[type="email"]:focus,
 .form-user input[type="tel"]:focus {
   border: 2px solid darkgreen;
 }
