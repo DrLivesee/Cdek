@@ -121,13 +121,14 @@ a {
 
 .main-contract {
   padding-top: 160px;
-  padding-bottom: 240px;
+  padding-bottom: 200px;
 }
 
 .main-contract h1 {
   display: block;
   width: 750px;
   font-size: 72px;
+  line-height: 100px;
 }
 
 /* about us */
@@ -136,7 +137,7 @@ a {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 80px;
+  padding-bottom: 170px;
 }
 
 .container-bg__about-us {
@@ -159,12 +160,12 @@ a {
   padding-right: 20px;
   width: 650px;
   background-color: #2da771;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   min-height: 230px;
   border-radius: 22px;
   color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   transition: background-color 0.3s ease;
 }
@@ -203,7 +204,7 @@ ul {
   padding: 0;
   display: flex;
   position: absolute;
-  top: 455px;
+  top: 480px;
   left: 270px;
 }
 
@@ -233,14 +234,34 @@ li.active {
 
 /* Cooperation */
 
+
+
 .cooperation {
   padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+  border-radius: 100px;
+  background: linear-gradient(to bottom, rgba(45, 167, 113, 0.15) 10%, white 70%);
+}
+
+.cont-coop {
+  position: relative;
+
+}
+
+.cont-coop .coop-big-circle {
+  position: absolute;
+  top: 140px;
+  left: 21%;
+  filter: blur(22px);
+  opacity: 0.5;
+  display: flex;
 }
 
 .cooperation h2 {
   text-align: center;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 48px;
   font-weight: bold;
 }
@@ -250,25 +271,116 @@ li.active {
   margin: 0 auto;
   width: 605px;
   flex-wrap: wrap;
+
 }
 
-.cooperation input {
+.cooperation input:not(:nth-child(8)) {
   width: 605px;
   outline: none;
   border: 3px solid #2da771;
   border-radius: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   font-size: 24px;
   padding: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
+
+.cooperation input:not(:nth-child(8)):focus {
+  border: 3px solid #157e51;
+  transition: all 0.3s ease-in-out;
+}
+
+.coop-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.cooperation input[type="file"] {
+  display: none;
+}
+
+.cooperation label {
+  width: 60px;
+  height: 60px;
+  border: 3px solid #2DA771;
+  border-radius: 8px;
+  text-align: center;
+  padding-top: 15px;
+  align-content: center;
+  margin-right: 15px;
+  transition: all 0.2s ease-in-out;
+  background-color: white;
+}
+
+
+.cooperation label:hover {
+  cursor: pointer;
+  background-color: #2DA771;
+}
+
+.cooperation label:active {
+  background-color: #19965F;
+  border-color: #19965F;
+}
+
+.cooperation label:hover path {
+  fill: white;
+}
+
+.cooperation label:active path {
+  fill: white;
+}
+
 
 .cooperation input::placeholder {
   opacity: 0.4;
   font-weight: bold;
 }
 
+.appointment-form .btn {
+  width: 200px;
+  color: #2DA771;
+  background-color: white;
+  border: 3px solid #2DA771;
+  border-radius: 8px;
+  opacity: 1;
+  align-content: center;
+  padding: 0px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.appointment-form .btn span {
+  margin-right: 20px;
+}
+
+.appointment-form .btn:hover {
+  background-color: #2DA771;
+  color: white;
+}
+
+.appointment-form .btn:hover path {
+  fill: white;
+}
+
+.appointment-form .btn:active path {
+  fill: white;
+}
+
+.appointment-form .btn:active {
+  border-color: #19965F;
+  background-color: #19965F;
+  color: white;
+}
+
+
+
 /* modal */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -384,7 +496,7 @@ li.active {
 .modal-content .small-circle {
   display: block;
   position: absolute;
-  top: 50px;
+  top: 60px;
   right: 30px;
   filter: blur(22px);
   opacity: 0.5;
