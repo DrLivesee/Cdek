@@ -25,12 +25,11 @@
         </div>
         <nav class="main-nav">
           <a href="#about-us">О нас</a>
-          <a href="#cooperation     ">Сотрудничество</a>
-          <a href="#">Преимущества</a>
-          <a href="#">Клиенты</a>
-          <a href="#">Калькулятор</a>
-          <a href="#">Отзывы</a>
-          <a href="#">Фулфилмент</a>
+          <a href="#cooperation">Сотрудничество</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#our-clients">Клиенты</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#fulfillment">Фулфилмент</a>
           <a href="#">Контакты</a>
         </nav>
         <div class="main-contract">
@@ -63,12 +62,12 @@
                 <img src="img/values.svg" />
                 <span>
                   <h3>Ценности</h3>
-                  <span id="about-values-descr">СДЭК – это МЫ. Мы любим свою работу и делаем ее хорошо.
+                  <span id="about-values-descr"><b>СДЭК – это МЫ.</b> Мы любим свою работу и делаем ее хорошо.
                     Мы помогаем и поддерживаем друг друга. От каждого из нас
                     зависит результат.</span>
                 </span>
               </div>
-              <ul id="about-values-dots">
+              <ul class="about-values-dots" id="about-values-dots">
                 <li class="active"></li>
                 <li></li>
                 <li></li>
@@ -79,20 +78,22 @@
                 <img src="img/numbers.svg" />
                 <span>
                   <h3>Цифры</h3>
-                  2000 год основания<br />
-                  1 000 000 активных пользователей<br />
-                  6 000 курьеров<br />
-                  150 000 отправлений в день<br />
-                  21 страна<br />
-                  36 000+ населенных пунктов на весь мир
+                  <ul>
+                    <li>2000 год основания</li>
+                    <li>1 000 000 активных пользователей</li>
+                    <li>6 000 курьеров</li>
+                    <li>150 000 отправлений в день</li>
+                    <li>21 страна</li>
+                    <li>36 000+ населенных пунктов на весь мир</li>
+                  </ul>
                 </span>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="container cont-coop">
-        <!-- <img class="coop-big-circle" src="img/big-circle.svg" width="700px" /> -->
+      <div class="container">
+
         <div id="cooperation" class="cooperation">
 
           <h2>Сотрудничество</h2>
@@ -128,7 +129,7 @@
         </div>
       </div>
       <div class="container">
-        <div class="advantages">
+        <div id="advantages" class="advantages">
           <h2>Преимущества</h2>
           <div class="advantages-items">
             <div class="advantages__item">
@@ -160,7 +161,7 @@
       </div>
       <div class="our-clients-bg">
         <div class="container">
-          <div class="our-clients">
+          <div id="our-clients" class="our-clients">
             <h2>Наши клиенты</h2>
             <p>Нам доверяют и мы из года в год поддерживаем это доверие</p>
             <div class="our-clients-items">
@@ -198,12 +199,117 @@
               </div>
               <div class="flex-block">
                 <a href="#" class="our-clients__item">
-                  <img src="img/client9.svg" width="170px">
+                  <img src="img/client9.svg" width=" 85px">
                 </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="reviews-bg">
+        <div class="container">
+          <div id="reviews" class="reviews">
+            <img class="reviews-bg__pct" src="img/quotes.svg">
+            <h2>Реальные отзывы от реальных клиентов</h2>
+            <div class="review review-efe">
+              <div class="review__item">
+                <img src="img/client6.svg" width="140px">
+                <input type="checkbox" class="read-more-state" id="post-1" />
+                <p class="read-more-wrap review-txt">Работа с косметической продукцией требует особой деликатности.
+                  Нужна
+                  аккуратность в обращении с товаром и слаженная работа логистики. Все эти качества, в полной мере,
+                  присутствуют у службы доставки СДЭК. Ежемесячно, мы отправляем внушительные объёмы посылок и можем с
+                  уверенностью сказать, что логистические решения от СДЭК нас ещё не подводили. <span
+                    class="read-more-target">От небольшого письма для
+                    партнёра до нескольких тяжёлых коробок, с нашей продукцией, мы пересылаем посредствам СДЭК. Широкая
+                    сеть пунктов выдачи заказа по всей территории РФ, а также за её пределами, делает отправку заказов
+                    для
+                    наших клиентов весьма удобной. Высокий клиентский сервис, а также удобный личный кабинет,
+                    благоприятно
+                    отражаются на скорости работы сервиса доставки. Наши клиенты довольны доставкой своих заказов, мы
+                    довольны логистической службой СДЭК. Большое вам спасибо!</span></p>
+                <label for="post-1" class="read-more-trigger"></label>
+              </div>
+              <span class="reviewer">
+                <h3>Гласов Дмитрий</h3>
+                Основатель косметической компании Efe L'arome
+              </span>
+            </div>
+            <div class="review review-swiss">
+              <div class="review__item">
+                <img src="img/client7.svg" width="80px">
+                <input type="checkbox" class="read-more-state" id="post-2" />
+                <p class="read-more-wrap review-txt">Мы работаем со СДЭК уже более 6 лет, росли вместе с компанией,
+                  переживали
+                  вместе взлеты и падения. На данном этапе мы передали более 80% нашей логистики в руки Компании. Наша
+                  продукция очень требовательна к бережной доставке. К сожалению в человеческом факторе неизбежны утери
+                  и повреждения, но на данный момент, количество таких случаев минимально.<span
+                    class="read-more-target"> Мы благодарны, что компания
+                    предоставила нам такого замечательного закрепленного менеджера, все вопросы, проблемы и претензии
+                    решаются очень быстро. Я очень рада, что наши пути сошлись, и мы имеем такого партнера как
+                    СДЭК.</span></p>
+                <label for="post-2" class="read-more-trigger"></label>
+              </div>
+              <span class="reviewer">
+                <h3>Варзова Наталья</h3>
+                Основатель магазина SWISSTRADE
+              </span>
+            </div>
+            <div class="review review-wars">
+              <div class="review__item">
+                <img src="img/client9.svg" width="80px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div id="fulfillment" class="fulfillment">
+          <h2>Фулфилмент</h2>
+          <p>Хранение и доставка товаров для интернет-магазинов</p>
+          <div class="fulfillment-items">
+            <div class="fulfillment__item">
+              <h3>Фулфилмент СДЭК ― это комплекс услуг в едином пакете.</h3>
+              <span>С ним вы сможете освободить время и заниматься только продажами, а логистику, складские операции и
+                пересылку ваших товаров доверьте нам. </span>
+            </div>
+            <div class="fulfillment-pct fulfillment__item">
+              <img src="img/fulfillment-plane.svg">
+            </div>
+            <div class="fulfillment__item">
+              <h3>Мы возьмем на себя:</h3>
+              <ul>
+                <li>хранение ваших товаров,</li>
+                <li>прием и комплектацию заказов,</li>
+                <li>доставку вашим покупателям,</li>
+                <li>получение оплаты,</li>
+                <li>работу с возвратами,</li>
+                <li>проверку качества товара от поставщика.</li>
+              </ul>
+            </div>
+            <div class="fulfillment-pct fulfillment__item">
+              <img src="img/fulfillment-map.svg">
+            </div>
+            <div class="fulfillment__item">
+              <h3>Почему Фулфилмент СДЭК?</h3>
+              <h4>Нам доверяют 60 000+ интернет-магазинов, потому что:</h4>
+              <ul>
+                <li>СДЭК работает 20 лет на рынке доставки,</li>
+                <li>у нас 2700+ пунктов выдачи заказов по всему миру,</li>
+                <li>доставляем в 40 000+ населенных пунктов РФ от 1 дня,</li>
+                <li>есть представительства в 21 стране мира,</li>
+                <li>принимаем оплату наложенным платежом,</li>
+                <li>оформляем полные и частичные возвраты — повышаем лояльность ваших клиентов.</li>
+              </ul>
+            </div>
+            <div class="fulfillment-pct fulfillment__item">
+              <img src="img/fulfillment-phone.svg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="contacts"></div>
       </div>
     </main>
   </div>
