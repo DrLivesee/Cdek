@@ -7,6 +7,10 @@ const link = document.getElementById("modal-btn")
 const popup = document.getElementById("modal-content")
 const close = document.getElementById("modal-content-close")
 
+const realFileBtn = document.getElementById("real-file");
+const customBtn = document.getElementById("custom-button");
+const customTxt = document.getElementById("custom-text");
+
 let isModalOpen = false
 
 const closeModal = () => {
@@ -97,3 +101,14 @@ valuesBlockDots.querySelectorAll("li").forEach((el, index) => {
     }, 200)
   })
 })
+
+
+realFileBtn.addEventListener("change", function () {
+  if (realFileBtn.value) {
+    customTxt.innerHTML = realFileBtn.value.match(
+      /[\/\\]([\w\d\s\.\-\(\)]+)$/
+    )[1];
+  } else {
+    customTxt.innerHTML = "Реквизиты";
+  }
+});
