@@ -1,15 +1,24 @@
 /* advantages */
 
 .advantages {
-  padding-top: 140px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+
+  @media (min-width: 1170px) {
+    padding-top: 140px;
+    padding-bottom: 80px;
+  }
 }
 
 .advantages h2 {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: bold;
   margin: 0 auto;
   text-align: center;
+
+  @media (min-width: 1170px) {
+    font-size: 48px;
+  }
 }
 
 .advantages .advantages-items {
