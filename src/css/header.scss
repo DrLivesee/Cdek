@@ -1,0 +1,81 @@
+.main-header {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+
+    .big-circle {
+        position: absolute;
+        filter: blur(25px);
+        opacity: 0.4;
+        top: 220px;
+        right: 10px;
+    }
+
+    .small-circle {
+        position: absolute;
+        filter: blur(25px);
+        opacity: 0.4;
+        top: 640px;
+        right: 500px;
+    }
+
+    .main-logo {
+        width: 720px;
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .main-logo .phone-number {
+        margin-right: 0px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            display: block;
+            padding: 2px 2px 2px 2px;
+            font-weight: bold;
+            transition: all 0.15s ease-in-out;
+
+            &:first-child {
+                padding-left: 0px;
+            }
+
+            &:last-child {
+                padding-right: 0px;
+            }
+
+            &:hover {
+                color: darkgreen;
+            }
+
+            &:active {
+                color: #2da771;
+            }
+        }
+
+        &__mobile-open {
+            display: none;
+        }
+    }
+
+    .main-contract {
+        padding-top: 160px;
+        padding-bottom: 200px;
+
+        h1 {
+            display: block;
+            width: 750px;
+            font-size: 72px;
+            line-height: 100px;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 // Import CSS files
 import "../css/common.scss"
+import "../css/header.scss"
 import "../css/style.scss"
 import "../css/about.scss"
 import "../css/advantages.scss"
