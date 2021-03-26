@@ -1,0 +1,118 @@
+/* reviews */
+
+.reviews-bg {
+  background-color: #f4f5f7;
+}
+
+.reviews {
+  padding-top: 120px;
+  position: relative;
+  padding-bottom: 90px;
+}
+
+.reviews .reviews-bg__pct {
+  display: block;
+  opacity: 0.3;
+  position: absolute;
+  top: 60px;
+  left: -63px;
+  z-index: 10;
+}
+
+.reviews h2 {
+  position: relative;
+  display: block;
+  margin-top: 0px;
+  font-size: 48px;
+  font-weight: bold;
+  width: 480px;
+  line-height: 64px;
+  z-index: 11;
+  margin-bottom: 100px;
+}
+
+.review {
+  width: 1200px;
+  display: flex;
+}
+
+.review .reviewer {
+  display: block;
+  width: 200px;
+  align-self: flex-end;
+  margin-bottom: 50px;
+  font-size: 14px;
+  color: #969bab;
+  padding-left: 20px;
+  line-height: 24px;
+}
+
+.review .reviewer h3 {
+  font-size: 18px;
+  color: black;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.review__item {
+  width: 1000px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px 40px 40px 80px;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.review__item img {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.review__item .review-txt {
+  font-size: 18px;
+  line-height: 32px;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.review__item .review-txt::before {
+  width: 16px;
+  height: 14px;
+  display: block;
+  position: absolute;
+  left: -40px;
+  content: "";
+  background-image: url("../img/quotes-mini.svg");
+  opacity: 0.3;
+}
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  display: none;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  display: inline;
+  font-size: inherit;
+  opacity: 1;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Читать подробнее...";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Скрыть";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: block;
+  color: #2da771;
+  line-height: 40px;
+  border-radius: 10px;
+}

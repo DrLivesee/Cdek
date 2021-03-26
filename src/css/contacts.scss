@@ -1,0 +1,73 @@
+/* contacts */
+
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 180px;
+}
+
+.contacts h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 64px;
+  text-align: center;
+}
+
+.contacts__item {
+  background-image: url("../img/contracts-bg.png");
+  background-repeat: no-repeat;
+  width: 792px;
+  min-height: 490px;
+  margin-top: 140px;
+  position: relative;
+  z-index: 50;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacts__item img {
+  display: block;
+  position: absolute;
+  left: 204px;
+}
+
+.contacts-info {
+  z-index: 55;
+  padding-top: 50px;
+}
+
+.contacts-info h3,
+.contacts-info h4 {
+  font-size: 36px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contacts-info h3 {
+  margin-top: 50px;
+}
+
+.contacts-info h4 {
+  font-size: 24px;
+}
+
+.phone-email {
+  display: flex;
+  margin-top: 140px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-email a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.phone-email .contact-email a {
+  display: block;
+  margin-bottom: 10px;
+}

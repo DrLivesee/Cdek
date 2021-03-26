@@ -1,0 +1,41 @@
+/* advantages */
+
+.advantages {
+  padding-top: 140px;
+  padding-bottom: 80px;
+}
+
+.advantages h2 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages .advantages-items {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.advantages .advantages__item {
+  padding-top: 20px;
+  width: 360px;
+  text-align: center;
+  margin-bottom: 70px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px;
+  min-height: 200px;
+}
+
+.advantages .advantages__item:hover {
+  background-color: rgba(45, 167, 113, 0.07);
+}
+
+.advantages p {
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+}
