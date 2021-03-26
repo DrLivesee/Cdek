@@ -259,16 +259,18 @@ a {
   border-radius: 50%;
 }
 
-
 /* Cooperation */
-
 
 .cooperation {
   padding-top: 50px;
   padding-bottom: 50px;
   position: relative;
   border-radius: 100px;
-  background: linear-gradient(to bottom, rgba(45, 167, 113, 0.65) 1%, white 90%);
+  background: linear-gradient(
+    to bottom,
+    rgba(45, 167, 113, 0.65) 1%,
+    white 90%
+  );
 }
 
 .cooperation h2 {
@@ -285,7 +287,6 @@ a {
   margin: 0 auto;
   width: 605px;
   flex-wrap: wrap;
-
 }
 
 .cooperation input:not(:nth-child(8)) {
@@ -319,7 +320,7 @@ a {
 .cooperation label {
   width: 60px;
   height: 60px;
-  border: 3px solid #2DA771;
+  border: 3px solid #2da771;
   border-radius: 20px;
   text-align: center;
   padding-top: 15px;
@@ -332,12 +333,12 @@ a {
 
 .cooperation label:hover {
   cursor: pointer;
-  background-color: #2DA771;
+  background-color: #2da771;
 }
 
 .cooperation label:active {
-  background-color: #19965F;
-  border-color: #19965F;
+  background-color: #19965f;
+  border-color: #19965f;
 }
 
 .cooperation label:hover path {
@@ -360,7 +361,6 @@ a {
   align-items: center;
 }
 
-
 .cooperation input::placeholder {
   opacity: 0.4;
   font-weight: bold;
@@ -368,9 +368,9 @@ a {
 
 .appointment-form .btn {
   width: 200px;
-  color: #2DA771;
+  color: #2da771;
   background-color: white;
-  border: 3px solid #2DA771;
+  border: 3px solid #2da771;
   border-radius: 20px;
   opacity: 1;
   padding: 0px;
@@ -385,7 +385,7 @@ a {
 }
 
 .appointment-form .btn:hover {
-  background-color: #2DA771;
+  background-color: #2da771;
   color: white;
 }
 
@@ -398,8 +398,8 @@ a {
 }
 
 .appointment-form .btn:active {
-  border-color: #19965F;
-  background-color: #19965F;
+  border-color: #19965f;
+  background-color: #19965f;
   color: white;
 }
 
@@ -453,7 +453,7 @@ a {
 }
 
 .our-clients-bg {
-  background-color: #F4F5F7;
+  background-color: #f4f5f7;
 }
 
 .our-clients .our-clients-items {
@@ -503,8 +503,7 @@ a {
 /* reviews */
 
 .reviews-bg {
-  background-color: #F4F5F7;
-
+  background-color: #f4f5f7;
 }
 
 .reviews {
@@ -545,7 +544,7 @@ a {
   align-self: flex-end;
   margin-bottom: 50px;
   font-size: 14px;
-  color: #969BAB;
+  color: #969bab;
   padding-left: 20px;
   line-height: 24px;
 }
@@ -556,7 +555,6 @@ a {
   line-height: 20px;
   margin-bottom: 10px;
 }
-
 
 .review__item {
   width: 1000px;
@@ -587,7 +585,7 @@ a {
   position: absolute;
   left: -40px;
   content: "";
-  background-image: url("img/quotes-mini.svg");
+  background-image: url("../img/quotes-mini.svg");
   opacity: 0.3;
 }
 
@@ -599,24 +597,24 @@ a {
   display: none;
 }
 
-.read-more-state:checked~.read-more-wrap .read-more-target {
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
   display: inline;
   font-size: inherit;
   opacity: 1;
 }
 
-.read-more-state~.read-more-trigger:before {
-  content: 'Читать подробнее...';
+.read-more-state ~ .read-more-trigger:before {
+  content: "Читать подробнее...";
 }
 
-.read-more-state:checked~.read-more-trigger:before {
-  content: 'Скрыть';
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Скрыть";
 }
 
 .read-more-trigger {
   cursor: pointer;
   display: block;
-  color: #2DA771;
+  color: #2da771;
   line-height: 40px;
   border-radius: 10px;
 }
@@ -684,7 +682,7 @@ a {
 }
 
 .fulfillment__item:nth-child(5) h3 {
-  color: #2DA771;
+  color: #2da771;
 }
 
 .fulfillment__item:nth-child(5) {
@@ -733,7 +731,7 @@ a {
 }
 
 .contacts__item {
-  background-image: url("img/contracts-bg.png");
+  background-image: url("../img/contracts-bg.png");
   background-repeat: no-repeat;
   width: 792px;
   min-height: 490px;
@@ -808,7 +806,7 @@ a {
 }
 
 .copyrigh {
-  color: #D9DBE1;
+  color: #d9dbe1;
   font-size: 14px;
   margin-bottom: 20px;
   align-self: flex-end;
@@ -821,7 +819,6 @@ a {
   align-items: center;
 }
 
-
 .footer-links a {
   display: block;
   padding: 0;
@@ -830,14 +827,13 @@ a {
   transition: 0.5s;
 }
 
-
 .footer-links a:hover {
   transition: 0.5s;
   transform: scale(1.2);
 }
 
 .footer-links a:active path {
-  fill: #19965F;
+  fill: #19965f;
 }
 
 /* modal */
@@ -1017,7 +1013,6 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0px;
-
   }
 
   .cdek-logo img {
@@ -1079,6 +1074,4 @@ a {
     top: 260px;
     left: 110px;
   }
-
-
 }
