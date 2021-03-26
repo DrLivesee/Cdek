@@ -1,12 +1,5 @@
 /* about us */
 
-.about-us {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 170px;
-}
-
 .container-bg__about-us {
   width: 100%;
   margin-left: auto;
@@ -14,106 +7,118 @@
   background: linear-gradient(to bottom, #f4f5f7 49.8%, white 50.2%);
 }
 
-.about-us__left h2 {
-  margin-top: 0px;
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 120px;
-}
-
-.about-us__right div {
+.about-us {
   display: flex;
-  padding-left: 60px;
-  padding-right: 20px;
-  width: 650px;
-  background-color: #2da771;
-  margin-bottom: 40px;
-  min-height: 235px;
-  border-radius: 22px;
-  color: white;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  transition: background-color 0.3s ease;
-}
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 170px;
 
-.about-us__right div:last-child {
-  margin-bottom: 0px;
-}
+  &__left h2 {
+    margin-top: 0px;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 120px;
+  }
 
-.about-us__right img {
-  display: block;
-  margin-right: 60px;
-}
+  &__right {
+    position: relative;
 
-.about-us__right h3 {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 16px;
-}
+    div {
+      display: flex;
+      padding-left: 60px;
+      padding-right: 20px;
+      width: 650px;
+      background-color: #2da771;
+      margin-bottom: 40px;
+      min-height: 235px;
+      border-radius: 22px;
+      color: white;
+      padding-top: 30px;
+      padding-bottom: 20px;
+      transition: background-color 0.3s ease;
 
-.about-us__right {
-  position: relative;
-}
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
 
-.about-us__right span {
-  vertical-align: middle;
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 3px;
-  transition: opacity 0.2s ease;
-}
+    img {
+      display: block;
+      margin-right: 60px;
+    }
 
-.about-values-dots {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  position: absolute;
-  top: 470px;
-  left: 270px;
-}
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-.about-values-dots li {
-  margin: 0;
-  padding: 0;
-  margin-right: 10px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-  border: 2px solid white;
-  opacity: 0.8;
-}
+    span {
+      vertical-align: middle;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 3px;
+      transition: opacity 0.2s ease;
+    }
+  }
 
-.about-values-dots li:hover {
-  background-color: rgba(211, 211, 211, 0.8);
-}
+  .about-values-dots {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 470px;
+    left: 270px;
 
-.about-values-dots li.active {
-  background-color: white;
-  opacity: 1;
-  pointer-events: none;
-}
+    li {
+      margin: 0;
+      padding: 0;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      border: 2px solid white;
+      opacity: 0.8;
 
-.numbers ul {
-  list-style: none;
-  padding-left: 15px;
-}
+      &:hover {
+        background-color: rgba(211, 211, 211, 0.8);
+      }
 
-.numbers li {
-  position: relative;
-}
+      &.active {
+        background-color: white;
+        opacity: 1;
+        pointer-events: none;
+      }
 
-.numbers li:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 5px;
-  left: -14px;
-  width: 7px;
-  height: 7px;
-  background-color: white;
-  border-radius: 50%;
+    }
+
+  }
+
+  .numbers {
+    ul {
+      list-style: none;
+      padding-left: 15px;
+
+      li {
+        position: relative;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: -14px;
+          width: 7px;
+          height: 7px;
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+
+    }
+  }
 }
