@@ -5,139 +5,139 @@
   padding-bottom: 50px;
   position: relative;
   border-radius: 100px;
-  background: linear-gradient(
-    to bottom,
-    rgba(45, 167, 113, 0.65) 1%,
-    white 90%
-  );
-}
+  background: linear-gradient(to bottom,
+      rgba(45, 167, 113, 0.65) 1%,
+      white 90%);
 
-.cooperation h2 {
-  text-align: center;
-  margin: 0px;
-  color: white;
-  margin-bottom: 60px;
-  font-size: 48px;
-  font-weight: bold;
-}
+  h2 {
+    text-align: center;
+    margin: 0px;
+    color: white;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-weight: bold;
+  }
 
-.cooperation form {
-  display: flex;
-  margin: 0 auto;
-  width: 605px;
-  flex-wrap: wrap;
-}
+  form {
+    display: flex;
+    margin: 0 auto;
+    width: 605px;
+    flex-wrap: wrap;
+  }
 
-.cooperation input:not(:nth-child(8)) {
-  width: 605px;
-  outline: none;
-  border: 3px solid #2da771;
-  border-radius: 0px;
-  margin-bottom: 35px;
-  font-size: 24px;
-  padding: 20px;
-  padding-bottom: 15px;
-  padding-top: 15px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-}
+  input:not(:nth-child(8)) {
+    width: 605px;
+    outline: none;
+    border: 3px solid #2da771;
+    border-radius: 0px;
+    margin-bottom: 35px;
+    font-size: 24px;
+    padding: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  }
 
-.cooperation input:not(:nth-child(8)):focus {
-  border: 3px solid #157e51;
-  transition: all 0.3s ease-in-out;
-}
+  input:not(:nth-child(8)):focus {
+    border: 3px solid #157e51;
+    transition: all 0.3s ease-in-out;
+  }
 
-.coop-bottom {
-  width: 100%;
-  display: flex;
-  margin-top: 20px;
-}
+  .coop-bottom {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+  }
 
-.cooperation input[type="file"] {
-  display: none;
-}
+  input[type="file"] {
+    display: none;
+  }
 
-.cooperation label {
-  width: 60px;
-  height: 60px;
-  border: 3px solid #2da771;
-  border-radius: 20px;
-  text-align: center;
-  padding-top: 15px;
-  align-content: center;
-  margin-right: 10px;
-  transition: all 0.2s ease-in-out;
-  background-color: white;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-}
+  label {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #2da771;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 15px;
+    align-content: center;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 
-.cooperation label:hover {
-  cursor: pointer;
-  background-color: #2da771;
-}
+    &:hover {
+      cursor: pointer;
+      background-color: #2da771;
 
-.cooperation label:active {
-  background-color: #19965f;
-  border-color: #19965f;
-}
+      path {
+        fill: white;
+      }
+    }
 
-.cooperation label:hover path {
-  fill: white;
-}
+    &:active {
+      background-color: #19965f;
+      border-color: #19965f;
 
-.cooperation label:active path {
-  fill: white;
-}
+      path {
+        fill: white;
+      }
+    }
+  }
 
-#custom-text {
-  word-wrap: break-word;
-  min-height: 50px;
-  width: 120px;
-  display: inline;
-  align-self: center;
-  font-family: sans-serif;
-  color: #aaa;
-  display: flex;
-  align-items: center;
-}
+  #custom-text {
+    word-wrap: break-word;
+    min-height: 50px;
+    width: 120px;
+    display: inline;
+    align-self: center;
+    font-family: sans-serif;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+  }
 
-.cooperation input::placeholder {
-  opacity: 0.4;
-  font-weight: bold;
-}
+  input::placeholder {
+    opacity: 0.4;
+    font-weight: bold;
+  }
 
-.appointment-form .btn {
-  width: 200px;
-  color: #2da771;
-  background-color: white;
-  border: 3px solid #2da771;
-  border-radius: 20px;
-  opacity: 1;
-  padding: 0px;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-  margin-left: 20px;
-}
+  .appointment-form {
+    .btn {
+      width: 200px;
+      color: #2da771;
+      background-color: white;
+      border: 3px solid #2da771;
+      border-radius: 20px;
+      opacity: 1;
+      padding: 0px;
+      font-size: 20px;
+      font-weight: bold;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+      margin-left: 20px;
 
-.appointment-form .btn span {
-  margin-right: 20px;
-}
+      span {
+        margin-right: 20px;
+      }
 
-.appointment-form .btn:hover {
-  background-color: #2da771;
-  color: white;
-}
+      &:hover {
+        background-color: #2da771;
+        color: white;
 
-.appointment-form .btn:hover path {
-  fill: white;
-}
+        path {
+          fill: white;
+        }
+      }
 
-.appointment-form .btn:active path {
-  fill: white;
-}
+      &:active {
+        border-color: #19965f;
+        background-color: #19965f;
+        color: white;
 
-.appointment-form .btn:active {
-  border-color: #19965f;
-  background-color: #19965f;
-  color: white;
+        path {
+          fill: white;
+        }
+      }
+    }
+  }
 }
