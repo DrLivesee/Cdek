@@ -8,10 +8,15 @@
 }
 
 .about-us {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 170px;
+  display: none;
+
+  @media (min-width: 1170px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 170px;
+  }
+
 
   &__left h2 {
     margin-top: 0px;

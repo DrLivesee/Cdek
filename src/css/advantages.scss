@@ -1,8 +1,8 @@
 /* advantages */
 
 .advantages {
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 
   @media (min-width: 1170px) {
     padding-top: 140px;
@@ -23,28 +23,48 @@
   .advantages-items {
     margin-top: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media (min-width: 1170px) {
+      justify-content: space-between;
+      padding-left: 0px;
+      padding-right: 0px;
+
+    }
   }
 
   .advantages__item {
     padding-top: 20px;
     width: 360px;
     text-align: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
     transition: all 0.2s ease-in-out;
     border-radius: 20px;
     min-height: 200px;
 
+    @media (min-width: 1170px) {
+      margin-bottom: 70px;
+    }
+
+
     &:hover {
-      background-color: rgba(45, 167, 113, 0.07);
+      @media (min-width: 1170px) {
+        background-color: rgba(45, 167, 113, 0.07);
+      }
     }
   }
 
   p {
-    line-height: 36px;
-    font-size: 22px;
+    line-height: 20px;
+    font-size: 14px;
     font-weight: bold;
     margin-top: 25px;
+
+    @media (min-width: 1170px) {
+      font-size: 22px;
+    }
   }
 }

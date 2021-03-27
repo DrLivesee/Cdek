@@ -31,79 +31,9 @@
   margin-top: 15px;
 }
 
-@media (max-width: 480px) {
-  .container-bg {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .main-logo {
-    width: 100%;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 0px;
-  }
-
-  .cdek-logo img {
-    width: 79px;
-  }
-
-  .main-logo .phone-number {
-    font-size: 10px;
-  }
-
-  .main-nav__mobile {
-    display: none;
-  }
-
-  .main-nav__mobile-open {
-    display: block;
-    border: none;
-    background-color: white;
-    margin-left: 5px;
-  }
-
-  .main-nav {
-    background-color: lightgrey;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .main-contract {
-    padding-top: 100px;
-    padding-left: 25px;
-  }
-
-  .main-contract h1 {
-    font-size: 28px;
-    width: 310px;
-    line-height: 33px;
-    margin-bottom: 30px;
-  }
-
-  .main-contract .btn {
-    height: auto;
-    width: 136px;
-    font-size: 12px;
-    padding: 12px 0px;
-  }
-
-  .main-header {
-    width: 480px;
-  }
-
-  .main-header .big-circle {
-    width: 174px;
-    top: 110px;
-    left: 210px;
-  }
-
-  .main-header .small-circle {
-    width: 73px;
-    top: 260px;
-    left: 110px;
-  }
-}
+// @media (max-width: 480px) {
+//   .container-bg {
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
