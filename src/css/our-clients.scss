@@ -22,16 +22,25 @@
 
   h2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
+
+    @media (min-width: 1170px) {
+      font-size: 48px;
+    }
   }
 
   p {
+    display: none;
     text-align: center;
     font-size: 18px;
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media (min-width: 1170px) {
+      display: inline;
+    }
   }
 
   .our-clients__item {
