@@ -10,6 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
+
+    @media (min-width: 1170px) {
+      flex-direction: row;
+    }
   }
 
   .copyrigh {
@@ -17,13 +22,24 @@
     font-size: 14px;
     margin-bottom: 20px;
     align-self: flex-end;
+    display: none;
+
+    @media (min-width: 1170px) {
+      display: block;
+    }
   }
 
   .footer-links {
-    width: 380px;
+    width: 60%;
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (min-width: 1170px) {
+      width: 380px;
+      flex-wrap: nowrap;
+    }
 
     a {
       display: block;
