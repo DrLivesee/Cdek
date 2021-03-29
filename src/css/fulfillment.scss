@@ -30,12 +30,12 @@
     line-height: 32px;
 
     @media (min-width: 1170px) {
-      display: inline;
+      display: block;
     }
   }
 
   .fulfillment-items {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,11 +48,12 @@
       flex-direction: row;
       padding-left: 0px;
       padding-right: 0px;
+      margin-top: 80px;
     }
   }
 
   .fulfillment__item {
-    width: 100%;
+    width: 80%;
     margin-bottom: 50px;
 
     @media (min-width: 1170px) {

@@ -1,14 +1,26 @@
 /* contacts */
 
 .contacts {
-  padding-top: 50px;
-  padding-bottom: 180px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+
+  @media (min-width: 1170px) {
+    padding-top: 30px;
+    padding-bottom: 200px;
+  }
 
   h2 {
-    font-size: 48px;
+    font-size: 24px;
     font-weight: bold;
-    line-height: 64px;
+    line-height: 48px;
     text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    @media (min-width: 1170px) {
+      font-size: 48px;
+      line-height: 64px;
+    }
   }
 
   .contacts__item {
@@ -19,58 +31,96 @@
     min-height: 490px;
     margin-top: 140px;
     position: relative;
-    z-index: 50;
     margin-left: auto;
     margin-right: auto;
 
     @media (min-width: 1170px) {
       display: block;
     }
+  }
 
-    img {
-      display: block;
-      position: absolute;
-      left: 204px;
+  .contacts__item-mobile {
+    background-image: url("../img/contracts-bg-mobile.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 650px;
+    width: 323px;
+
+
+    @media (min-width: 1170px) {
+      display: none;
     }
   }
 
   .contacts-info {
-    z-index: 55;
-    padding-top: 50px;
+    padding-top: 45px;
+
+    @media (min-width: 1170px) {
+      padding-top: 50px;
+    }
 
     h3,
     h4 {
-      font-size: 36px;
+      font-size: 24px;
       text-align: center;
       margin: 0;
       margin-bottom: 20px;
       color: white;
+
+      @media (min-width: 1170px) {
+        font-size: 36px;
+      }
     }
 
     h3 {
-      margin-top: 50px;
+      margin-top: 0px;
+
+      @media (min-width: 1170px) {
+        margin-top: 50px;
+      }
     }
 
     h4 {
-      font-size: 24px;
+      font-size: 18px;
+
+      @media (min-width: 1170x) {
+        font-size: 24px;
+      }
     }
   }
 
   .phone-email {
     display: flex;
-    margin-top: 140px;
+    margin-top: 370px;
     padding-right: 20px;
     padding-left: 20px;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+
+    @media (min-width: 1170px) {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-top: 140px;
+    }
 
     a {
       color: white;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: bold;
+
+      @media (min-width: 1170px) {
+        font-size: 24px;
+      }
     }
 
     .contact-email {
+      margin-top: 30px;
+
+      @media (min-width: 1170px) {
+        margin-top: 0px;
+      }
+
       a {
         display: block;
         margin-bottom: 10px;
