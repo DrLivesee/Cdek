@@ -1,4 +1,5 @@
 // Import CSS files
+import "swiper/swiper-bundle.css"
 import "../css/common.scss"
 import "../css/header.scss"
 import "../css/style.scss"
