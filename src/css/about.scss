@@ -2,23 +2,70 @@
 
 .about-us__mobile {
   width: 100%;
-  background-color: #F4F5F7;
-  padding: 10px 23px 0px 23px;
+  background-color: #f4f5f7;
+
+  > .container {
+    padding: 10px 23px 0px 23px;
+  }
 
   @media (min-width: 1170px) {
     display: none;
   }
 
-  &-icons {
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     width: 100%;
+  }
+
+  &-icons {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 
+    li {
+      position: relative;
 
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #2da771;
+        display: none;
+      }
+
+      &.active {
+        display: block;
+
+        &::after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-values {
+    display: block;
+    position: relative;
+    background: #2da771;
+
+    li {
+      margin: 0;
+      padding: 10px 23px;
+      display: none;
+      color: #fff;
+
+      &.active {
+        display: block;
+      }
+    }
   }
 }
 
@@ -38,7 +85,6 @@
     padding-top: 40px;
     padding-bottom: 170px;
   }
-
 
   &__left h2 {
     margin-top: 0px;
@@ -120,9 +166,7 @@
         opacity: 1;
         pointer-events: none;
       }
-
     }
-
   }
 
   .numbers {
@@ -145,7 +189,6 @@
           border-radius: 50%;
         }
       }
-
     }
   }
 }

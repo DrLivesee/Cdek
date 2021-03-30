@@ -1,516 +1,644 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cdek</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <title>Cdek</title>
-</head>
-
-<body>
-  <div class="body-wrapper" id="body-wrapper">
-    <header class="main-header">
-      <img class="big-circle" src="./img/big-circle.svg" />
-      <img class="small-circle" src="./img/small-circle.svg" />
-      <div class="container">
-        <div class="main-logo">
-          <button class="main-nav__mobile-open" type="button">
-            <img src="./img/main-nav-mobile.svg" />
-          </button>
-          <div class="cdek-logo">
-            <img src="./img/cdek-logo.svg" />
-          </div>
-
-          <a class="phone-number" href="tel:+79060567068">+7(906)056-70-68</a>
-        </div>
-        <div class="main-nav__mobile">
-          <nav class="main-nav">
-            <a href="#about-us">О нас</a>
-            <a href="#cooperation">Сотрудничество</a>
-            <a href="#advantages">Преимущества</a>
-            <a href="#our-clients">Клиенты</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#fulfillment">Фулфилмент</a>
-            <a href="#contacts">Контакты</a>
-          </nav>
-        </div>
-        <div class="main-contract">
-          <h1>Заключить договор и забыть о вопросах логистики</h1>
-          <button class="btn modal-btn">Оставить заявку</button>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="about-us__mobile">
+  <body>
+    <div class="body-wrapper" id="body-wrapper">
+      <header class="main-header">
+        <img class="big-circle" src="./img/big-circle.svg" />
+        <img class="small-circle" src="./img/small-circle.svg" />
         <div class="container">
-          <h2>О нас</h2>
-          <ul class="about-us__mobile-icons">
-            <li>
-              <p>
-                Миссия
-              </p>
-              <img src="./img/mission.svg" />
-            </li>
-            <li>
-              <p>
-                Ценности
-              </p>
-              <img src="./img/values.svg" />
-            </li>
-            <li>
-              <p>
-                Цифры
-              </p>
-              <img src="./img/numbers.svg" />
-            </li>
-          </ul>
+          <div class="main-logo">
+            <button class="main-nav__mobile-open" type="button">
+              <img src="./img/main-nav-mobile.svg" />
+            </button>
+            <div class="cdek-logo">
+              <img src="./img/cdek-logo.svg" />
+            </div>
 
-        </div>
-      </div>
-      <div class="container-bg__about-us container-bg">
-        <div class="container">
-          <div id="about-us" class="about-us">
-            <div class="about-us__left">
-              <h2>О нас</h2>
-              <img src="./img/about-us.svg" />
-            </div>
-            <div class="about-us__right">
-              <div class="mission">
-                <img src="./img/mission.svg" />
-                <span>
-                  <h3>Миссия</h3>
-                  Мы оказываем людям и компаниям спектр услуг своевременной и
-                  гарантированной доставки, постоянно повышая уровень сервиса,
-                  внедряя новые технологии, эффективно используя внутренний
-                  потенциал и внешние ресурсы.
-                </span>
-              </div>
-
-              <div class="values" id="about-values">
-                <img src="./img/values.svg" />
-                <span>
-                  <h3>Ценности</h3>
-                  <span id="about-values-descr"><b>СДЭК – это МЫ.</b> Мы любим свою работу и делаем ее
-                    хорошо. Мы помогаем и поддерживаем друг друга. От каждого
-                    из нас зависит результат.</span>
-                </span>
-              </div>
-              <ul class="about-values-dots" id="about-values-dots">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-              <div class="numbers">
-                <img src="./img/numbers.svg" />
-                <span>
-                  <h3>Цифры</h3>
-                  <ul>
-                    <li>2000 год основания</li>
-                    <li>1 000 000 активных пользователей</li>
-                    <li>6 000 курьеров</li>
-                    <li>150 000 отправлений в день</li>
-                    <li>21 страна</li>
-                    <li>36 000+ населенных пунктов на весь мир</li>
-                  </ul>
-                </span>
-              </div>
-            </div>
+            <a class="phone-number" href="tel:+79060567068">+7(906)056-70-68</a>
           </div>
-        </div>
-      </div>
-      <div class="container">
-        <div id="cooperation" class="cooperation">
-          <h2>Сотрудничество</h2>
-          <form class="appointment-form" action="#" method="post">
-            <input type="tel" name="phone" value="" placeholder="Ваш телефон" />
-            <input type="email" name="email" value="" placeholder="E-mail" />
-            <input type="text" name="name" value="" placeholder="Имя заполнителя анкеты" />
-            <input type="text" name="organization" value="" placeholder="Наименование организации" />
-            <input type="url" name="site" value="" placeholder="Ваш сайт" />
-            <input type="text" name="inn" value="" placeholder="ИНН" />
-            <input type="text" name="city" value="" placeholder="Из какого города планируются отправки?" />
-            <div class="coop-bottom">
-              <input accept="image/*" id="real-file" type="file" name="file" value="" />
-              <label id="custom-button" for="real-file">
-                <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M21.2475 17.5357V23.7138H0.653931V17.5357H2.71329V21.6544H19.1882V17.5357H21.2475ZM16.8302 6.10624L15.3681 7.56839L11.9804 4.17044V19.1935H9.92105V4.17044L6.5334 7.56839L5.07126 6.10624L10.9507 0.237061L16.8302 6.10624Z"
-                    fill="#2DA771" />
-                </svg>
-              </label>
-              <span id="custom-text">
-                <div class="custom-text">Реквизиты</div>
-              </span>
-
-              <button class="btn" type="submit">
-                <span>Отправить</span>
-                <svg width="22" height="14" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M15.0315 2.68259C14.641 2.29206 14.641 1.6589 15.0315 1.26837C15.4221 0.877848 16.0552 0.877848 16.4458 1.26837L22.4458 7.26837C22.8363 7.6589 22.8363 8.29206 22.4458 8.68259L16.4458 14.6826C16.0552 15.0731 15.4221 15.0731 15.0315 14.6826C14.641 14.2921 14.641 13.6589 15.0315 13.2684L19.3244 8.97546H1.74943C1.19106 8.97546 0.738403 8.52775 0.738403 7.97546C0.738403 7.42318 1.19106 6.97546 1.74943 6.97546H19.3244L15.0315 2.68259Z"
-                    fill="#2DA771" />
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="container">
-        <div id="advantages" class="advantages">
-          <h2>Преимущества</h2>
-          <div class="advantages-items">
-            <div class="advantages__item">
-              <img src="./img/advantage1.svg" />
-              <p>Персональный менеджер</p>
-            </div>
-            <div class="advantages__item">
-              <img src="./img/advantage2.svg" />
-              <p>Бесплатное хранение на пунктах выдачи в течение 14 дней</p>
-            </div>
-            <div class="advantages__item">
-              <img src="./img/advantage3.svg" />
-              <p>Бесплатная упаковка - Пакеты А3, А4, конверты А4</p>
-            </div>
-            <div class="advantages__item">
-              <img src="./img/advantage4.svg" />
-              <p>Бесплатный осмотр</p>
-            </div>
-            <div class="advantages__item">
-              <img src="./img/advantage5.svg" />
-              <p>Бесплатная примерка</p>
-            </div>
-            <div class="advantages__item">
-              <img src="./img/advantage6.svg" />
-              <p>Бесплатный частный выкуп</p>
-            </div>
+          <div class="main-nav__mobile">
+            <nav class="main-nav">
+              <a href="#about-us">О нас</a>
+              <a href="#cooperation">Сотрудничество</a>
+              <a href="#advantages">Преимущества</a>
+              <a href="#our-clients">Клиенты</a>
+              <a href="#reviews">Отзывы</a>
+              <a href="#fulfillment">Фулфилмент</a>
+              <a href="#contacts">Контакты</a>
+            </nav>
           </div>
-        </div>
-      </div>
-      <div class="our-clients-bg container-bg">
-        <div class="container">
-          <div id="our-clients" class="our-clients">
-            <h2>Наши клиенты</h2>
-            <p>Нам доверяют и мы из года в год поддерживаем это доверие</p>
-            <div class="our-clients-items">
-              <div class="flex-block">
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client1.svg" width="170px" />
-                </a>
-              </div>
-              <div class="flex-block">
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client2.svg" width="170px" />
-                </a>
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client3.svg" width="70px" />
-                </a>
-              </div>
-              <div class="flex-block">
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client4.svg" width="170px" />
-                </a>
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client5.svg" width="170px" height="100px" />
-                </a>
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client6.svg" width="170px" />
-                </a>
-              </div>
-              <div class="flex-block">
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client7.svg" width="100px" />
-                </a>
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client8.svg" width="170px" />
-                </a>
-              </div>
-              <div class="flex-block">
-                <a href="#" class="our-clients__item">
-                  <img src="./img/client9.svg" width=" 85px" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="reviews-bg container-bg">
-        <div class="container">
-          <div id="reviews" class="reviews">
-            <img class="reviews-bg__pct" src="./img/quotes.svg" />
-            <h2>Реальные отзывы от реальных клиентов</h2>
-            <div class="review review-efe">
-              <div class="review__item">
-                <img src="./img/client6.svg" width="140px" />
-                <input type="checkbox" class="read-more-state" id="post-1" />
-                <p class="read-more-wrap review-txt">
-                  Работа с косметической продукцией требует особой
-                  деликатности. Нужна аккуратность в обращении с товаром и
-                  слаженная работа логистики. Все эти качества, в полной мере,
-                  присутствуют у службы доставки СДЭК. Ежемесячно, мы
-                  отправляем внушительные объёмы посылок и можем с
-                  уверенностью сказать, что логистические решения от СДЭК нас
-                  ещё не подводили.
-                  <span class="read-more-target">От небольшого письма для партнёра до нескольких тяжёлых
-                    коробок, с нашей продукцией, мы пересылаем посредствам
-                    СДЭК. Широкая сеть пунктов выдачи заказа по всей
-                    территории РФ, а также за её пределами, делает отправку
-                    заказов для наших клиентов весьма удобной. Высокий
-                    клиентский сервис, а также удобный личный кабинет,
-                    благоприятно отражаются на скорости работы сервиса
-                    доставки. Наши клиенты довольны доставкой своих заказов,
-                    мы довольны логистической службой СДЭК. Большое вам
-                    спасибо!</span>
-                </p>
-                <p class="read-more-wrap review-txt2">
-                  Работа с косметической продукцией требует особой
-                  деликатности. Нужна аккуратность в обращении с товаром и
-                  слаженная работа логистики. Все эти качества, в полной мере,
-                  присутствуют у службы доставки СДЭК.<span class="read-more-target"> Ежемесячно, мы
-                    отправляем внушительные объёмы посылок и можем с
-                    уверенностью сказать, что логистические решения от СДЭК нас
-                    ещё не подводили.
-                    От небольшого письма для партнёра до нескольких тяжёлых
-                    коробок, с нашей продукцией, мы пересылаем посредствам
-                    СДЭК. Широкая сеть пунктов выдачи заказа по всей
-                    территории РФ, а также за её пределами, делает отправку
-                    заказов для наших клиентов весьма удобной. Высокий
-                    клиентский сервис, а также удобный личный кабинет,
-                    благоприятно отражаются на скорости работы сервиса
-                    доставки. Наши клиенты довольны доставкой своих заказов,
-                    мы довольны логистической службой СДЭК. Большое вам
-                    спасибо!</span>
-                </p>
-                <label for="post-1" class="read-more-trigger"></label>
-              </div>
-              <span class="reviewer">
-                <h3>Гласов Дмитрий</h3>
-                Основатель косметической компании Efe L'arome
-              </span>
-            </div>
-            <div class="review review-swiss">
-              <div class="review__item">
-                <img src="./img/client7.svg" width="80px" />
-                <input type="checkbox" class="read-more-state" id="post-2" />
-                <p class="read-more-wrap review-txt">
-                  Мы работаем со СДЭК уже более 6 лет, росли вместе с
-                  компанией, переживали вместе взлеты и падения. На данном
-                  этапе мы передали более 80% нашей логистики в руки Компании.
-                  Наша продукция очень требовательна к бережной доставке. К
-                  сожалению в человеческом факторе неизбежны утери и
-                  повреждения, но на данный момент, количество таких случаев
-                  минимально.<span class="read-more-target">
-                    Мы благодарны, что компания предоставила нам такого
-                    замечательного закрепленного менеджера, все вопросы,
-                    проблемы и претензии решаются очень быстро. Я очень рада,
-                    что наши пути сошлись, и мы имеем такого партнера как
-                    СДЭК.</span>
-                </p>
-                <p class="read-more-wrap review-txt2">
-                  Мы работаем со СДЭК уже более 6 лет, росли вместе с
-                  компанией, переживали вместе взлеты и падения. На данном
-                  этапе мы передали более 80% нашей логистики в руки Компании.
-                  Наша продукция очень требовательна к бережной доставке.<span class="read-more-target"> К
-                    сожалению в человеческом факторе неизбежны утери и
-                    повреждения, но на данный момент, количество таких случаев
-                    минимально.
-                    Мы благодарны, что компания предоставила нам такого
-                    замечательного закрепленного менеджера, все вопросы,
-                    проблемы и претензии решаются очень быстро. Я очень рада,
-                    что наши пути сошлись, и мы имеем такого партнера как
-                    СДЭК.</span>
-                </p>
-                <label for="post-2" class="read-more-trigger"></label>
-              </div>
-              <span class="reviewer">
-                <h3>Варзова Наталья</h3>
-                Основатель магазина SWISSTRADE
-              </span>
-            </div>
-            <div class="review review-wars">
-              <div class="review__item">
-                <img src="./img/client9.svg" width="80px" />
-                <input type="checkbox" class="read-more-state" id="post-3" />
-                <p class="read-more-wrap review-txt">
-                  Вот уже более 4 лет курьерская компания СДЭК помогает нам
-                  доставлять по просторам Вселенной товары межгалактического
-                  масштаба - световые мечи нашего собственного
-                  производства.<span class="read-more-target">
-                    Скорость доставки заказов сравнима со скоростью
-                    Тысячелетнего Сокола, а качество обслуживания - с
-                    мастерством Джедаев. Именно поэтому наши световые мечи
-                    доставляются всегда вовремя, а главное - качественно. Да
-                    прибудет с вами СДЭК!</span>
-                </p>
-
-                <p class="read-more-wrap review-txt2">
-                  Вот уже более 4 лет курьерская компания СДЭК помогает нам
-                  доставлять по просторам Вселенной товары межгалактического
-                  масштаба - световые мечи нашего собственного
-                  производства.<span class="read-more-target">
-                    Скорость доставки заказов сравнима со скоростью
-                    Тысячелетнего Сокола, а качество обслуживания - с
-                    мастерством Джедаев. Именно поэтому наши световые мечи
-                    доставляются всегда вовремя, а главное - качественно. Да
-                    прибудет с вами СДЭК!</span>
-                </p>
-                <label for="post-3" class="read-more-trigger"></label>
-              </div>
-              <span class="reviewer">
-                <h3>Команда мастерской световых мечей Warsabers</h3>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div id="fulfillment" class="fulfillment">
-          <h2>Фулфилмент</h2>
-          <p>Хранение и доставка товаров для интернет-магазинов</p>
-          <div class="fulfillment-items">
-            <div class="fulfillment__item">
-              <h3>Фулфилмент СДЭК ― это комплекс услуг в едином пакете.</h3>
-              <span>С ним вы сможете освободить время и заниматься только
-                продажами, а логистику, складские операции и пересылку ваших
-                товаров доверьте нам.
-              </span>
-            </div>
-            <div class="fulfillment-pct fulfillment__item">
-              <img src="./img/fulfillment-plane.svg" />
-            </div>
-            <div class="fulfillment__item">
-              <h3>Мы возьмем на себя:</h3>
-              <ul>
-                <li>хранение ваших товаров,</li>
-                <li>прием и комплектацию заказов,</li>
-                <li>доставку вашим покупателям,</li>
-                <li>получение оплаты,</li>
-                <li>работу с возвратами,</li>
-                <li>проверку качества товара от поставщика.</li>
-              </ul>
-            </div>
-            <div class="fulfillment-pct fulfillment__item">
-              <img src="./img/fulfillment-map.svg" />
-            </div>
-            <div class="fulfillment__item">
-              <h3>Почему Фулфилмент СДЭК?</h3>
-              <h4>Нам доверяют 60 000+ интернет-магазинов, потому что:</h4>
-              <ul>
-                <li>СДЭК работает 20 лет на рынке доставки,</li>
-                <li>у нас 2700+ пунктов выдачи заказов по всему миру,</li>
-                <li>доставляем в 40 000+ населенных пунктов РФ от 1 дня,</li>
-                <li>есть представительства в 21 стране мира,</li>
-                <li>принимаем оплату наложенным платежом,</li>
-                <li>оформляем полные и частичные возвраты — повышаем лояльность ваших клиентов.
-                </li>
-              </ul>
-            </div>
-            <div class="fulfillment-pct fulfillment__item">
-              <img src="./img/fulfillment-phone.svg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div id="contacts" class="contacts">
-          <h2>Контакты</h2>
-          <div class="contacts__item-mobile">
-            <div class="contacts-info">
-              <h3>Торхачев Кирилл Андреевич</h3>
-              <h4>Генеральный директор</h4>
-              <div class="phone-email">
-                <div class="contact-phone">
-                  <a class="phone-number" href="tel:+79167184024">+7(916)718-40-24
-                  </a>
-                </div>
-                <div class="contact-email">
-                  <a href="mailto:torhachev.k@cdek.ru">torhachev.k@cdek.ru</a>
-                  <a href="mailto:contract@cdek-top.ru">contract@cdek-top.ru</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contacts__item">
-            <div class="contacts-info">
-              <h3>Торхачев Кирилл Андреевич</h3>
-              <h4>Генеральный директор</h4>
-              <div class="phone-email">
-                <div class="contact-phone">
-                  <a class="phone-number" href="tel:+79167184024">+7(916)718-40-24
-                  </a>
-                </div>
-                <div class="contact-email">
-                  <a href="mailto:torhachev.k@cdek.ru">torhachev.k@cdek.ru</a>
-                  <a href="mailto:contract@cdek-top.ru">contract@cdek-top.ru</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer class="main-footer container-bg">
-      <div class="container">
-        <div class="footer">
-          <div class="copyrigh">© 2021 CDEK-TOP</div>
-          <div class="footer-links">
-            <a href="#">
-              <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M44.0742 12.4149C44.0742 14.1714 42.6502 15.5949 40.8942 15.5949C39.1381 15.5949 37.7142 14.1714 37.7142 12.4149C37.7142 10.6585 39.1381 9.23493 40.8942 9.23493C42.6506 9.23493 44.0742 10.6585 44.0742 12.4149ZM26.7485 35.3937C21.8701 35.3937 17.9153 31.439 17.9153 26.5605C17.9153 21.6821 21.8701 17.7274 26.7485 17.7274C31.627 17.7274 35.5817 21.6821 35.5817 26.5605C35.5817 31.439 31.627 35.3937 26.7485 35.3937ZM26.7485 12.9524C19.2329 12.9524 13.1404 19.0449 13.1404 26.5605C13.1404 34.0762 19.2329 40.1687 26.7485 40.1687C34.2642 40.1687 40.3567 34.0762 40.3567 26.5605C40.3567 19.0449 34.2642 12.9524 26.7485 12.9524ZM26.7485 4.83552C33.8244 4.83552 34.6625 4.86243 37.4566 4.98996C40.0404 5.10797 41.4436 5.53942 42.3773 5.90255C43.6141 6.38328 44.4969 6.95759 45.4244 7.88509C46.3519 8.81217 46.9262 9.69495 47.4069 10.9322C47.7697 11.8659 48.2015 13.2691 48.3195 15.8529C48.4471 18.6474 48.474 19.4855 48.474 26.5614C48.474 33.6373 48.4471 34.4753 48.3195 37.2694C48.2015 39.8532 47.7701 41.2565 47.4069 42.1902C46.9262 43.427 46.3519 44.3097 45.4244 45.2373C44.4973 46.1648 43.6145 46.7391 42.3773 47.2198C41.4436 47.5825 40.0404 48.0144 37.4566 48.1324C34.6625 48.2599 33.8244 48.2868 26.7485 48.2868C19.6722 48.2868 18.8341 48.2599 16.0401 48.1324C13.4563 48.0144 12.053 47.5829 11.1193 47.2198C9.88253 46.7391 8.99975 46.1648 8.07225 45.2373C7.14516 44.3102 6.57044 43.4274 6.08972 42.1902C5.727 41.2565 5.29513 39.8532 5.17712 37.2694C5.04959 34.4749 5.02268 33.6369 5.02268 26.5614C5.02268 19.4855 5.04959 18.6474 5.17712 15.8529C5.29513 13.2691 5.72658 11.8659 6.08972 10.9322C6.57044 9.69537 7.14475 8.81259 8.07225 7.88509C8.99933 6.95759 9.88211 6.38328 11.1193 5.90255C12.053 5.53984 13.4563 5.10797 16.0401 4.98996C18.8346 4.86243 19.6726 4.83552 26.7485 4.83552ZM26.7485 0.0605469C19.5517 0.0605469 18.6491 0.0911875 15.8227 0.219961C13.0021 0.348734 11.0754 0.79675 9.39021 1.4518C7.64742 2.12879 6.16963 3.03517 4.69639 4.50841C3.22316 5.98164 2.31678 7.45943 1.63979 9.20222C0.984738 10.8879 0.536723 12.8141 0.407949 15.6347C0.279176 18.4611 0.248535 19.3637 0.248535 26.5605C0.248535 33.7574 0.279176 34.66 0.407949 37.4864C0.536723 40.307 0.984738 42.2332 1.63979 43.9189C2.31678 45.6617 3.22316 47.1395 4.69639 48.6127C6.16963 50.0859 7.64742 50.9919 9.39021 51.6693C11.0759 52.3243 13.0021 52.7724 15.8227 52.9011C18.6491 53.0299 19.5517 53.0605 26.7485 53.0605C33.9454 53.0605 34.848 53.0299 37.6744 52.9011C40.495 52.7724 42.4212 52.3243 44.1069 51.6693C45.8497 50.9919 47.3274 50.0859 48.8007 48.6127C50.2739 47.1395 51.1799 45.6617 51.8573 43.9189C52.5123 42.2332 52.9603 40.307 53.0891 37.4864C53.2179 34.66 53.2485 33.7574 53.2485 26.5605C53.2485 19.3637 53.2179 18.4611 53.0891 15.6347C52.9603 12.8141 52.5123 10.8879 51.8573 9.20222C51.1799 7.45943 50.2739 5.98164 48.8007 4.50841C47.3274 3.03517 45.8497 2.1292 44.1069 1.4518C42.4212 0.79675 40.495 0.348734 37.6744 0.219961C34.848 0.0911875 33.9454 0.0605469 26.7485 0.0605469Z"
-                  fill="#2DA771" />
-              </svg>
-            </a>
-            <a href="#"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M27.3787 14.3803C20.354 14.3803 14.6432 20.0911 14.641 27.1136C14.6388 29.98 15.4802 32.1265 16.8913 34.3724L15.6061 39.0717L20.4247 37.8063C22.5844 39.0872 24.6448 39.8557 27.3699 39.8579C34.388 39.8579 40.1053 34.1449 40.1075 27.1246C40.1097 20.0867 34.4211 14.3825 27.3787 14.3803ZM34.8694 32.5858C34.5514 33.4802 33.021 34.2951 32.2856 34.4055C31.6253 34.5049 30.7906 34.5446 29.8741 34.2531C29.3176 34.0764 28.6043 33.8402 27.6923 33.4471C23.852 31.7886 21.3455 27.9218 21.1534 27.6679C20.9613 27.4117 19.5899 25.592 19.5899 23.7083C19.5899 21.8246 20.5792 20.8971 20.9304 20.5151C21.2815 20.133 21.6944 20.0359 21.9506 20.0359L22.6838 20.0491C22.9179 20.0602 23.2337 19.9608 23.545 20.7072C23.863 21.4735 24.6293 23.3572 24.7243 23.5493C24.8192 23.7414 24.8833 23.9645 24.7552 24.2207C24.6271 24.4768 24.5631 24.6358 24.3732 24.8589L23.799 25.5302C23.6069 25.7201 23.4081 25.9277 23.6312 26.3119C23.8542 26.6962 24.6227 27.9483 25.76 28.9642C27.2219 30.2693 28.4564 30.6734 28.8384 30.8633C29.2204 31.0532 29.4435 31.0223 29.6687 30.7684C29.8918 30.5122 30.6249 29.6509 30.8811 29.2667C31.1373 28.8847 31.3912 28.9465 31.7424 29.0746C32.0935 29.2027 33.975 30.1279 34.357 30.3201C34.7391 30.5122 34.9952 30.6072 35.0902 30.7662C35.1896 30.9252 35.1896 31.6914 34.8694 32.5858ZM27.3102 0.750488C12.6756 0.750488 0.810242 12.6159 0.810242 27.2505C0.810242 41.8851 12.6756 53.7505 27.3102 53.7505C41.9449 53.7505 53.8102 41.8851 53.8102 27.2505C53.8102 12.6159 41.9449 0.750488 27.3102 0.750488ZM27.3743 42.4438C24.8104 42.4438 22.2841 41.799 20.047 40.58L11.927 42.7088L14.1 34.7699C12.7595 32.4467 12.0529 29.8099 12.0551 27.1114C12.0573 18.6645 18.9296 11.7922 27.3743 11.7922C31.4729 11.7944 35.3199 13.3888 38.2106 16.2839C41.1035 19.179 42.6957 23.0282 42.6935 27.1224C42.6913 35.5693 35.819 42.4438 27.3743 42.4438Z"
-                  fill="#2DA771" />
-              </svg>
-            </a>
-            <a href="#"><svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M31.2306 23.9998C31.2306 25.7488 30.6387 28.0389 29.7201 29.8342C27.4919 34.2067 22.9559 34.178 22.9559 29.5251C22.9559 27.7893 23.5522 25.5523 24.4731 23.8276C26.7278 19.5765 31.2306 20.2412 31.2306 23.9998ZM53.9366 27.2505C53.9366 41.8851 42.0713 53.7505 27.4366 53.7505C12.802 53.7505 0.936646 41.8851 0.936646 27.2505C0.936646 12.6159 12.802 0.750488 27.4366 0.750488C42.0713 0.750488 53.9366 12.6159 53.9366 27.2505ZM42.895 24.6137C42.895 17.4455 37.0849 12.2449 29.0796 12.2449C18.1109 12.2449 11.9783 19.1989 11.9783 27.8644C11.9783 35.9734 17.4263 42.2561 27.4896 42.2561C33.0546 42.2561 36.5968 40.6529 38.8007 39.4118L37.2836 37.2233C35.0267 38.5329 32.3126 39.732 27.8849 39.732C20.3126 39.732 15.2246 34.8759 15.2246 27.6458C15.2246 15.0274 29.3601 12.7219 35.5721 16.4473C41.3668 20.0734 41.146 28.7654 36.8574 32.0889C34.574 33.913 32.0013 33.8534 32.836 30.4194C32.836 30.4194 35.5125 20.5062 35.8261 19.433H32.8139L32.2155 21.5353C31.6016 19.8018 30.133 18.6755 27.9954 18.6755C23.5389 18.6755 19.7759 23.5118 19.7759 29.238C19.7759 33.0584 21.7921 35.4302 25.0318 35.4302C27.8651 35.4302 29.338 33.8269 30.2523 32.3981C29.5898 38.7979 42.895 35.8365 42.895 24.6137Z"
-                  fill="#2DA771" />
-              </svg>
-            </a>
-            <a href="#"><svg width="52" height="55" viewBox="0 0 52 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M34.3805 21.1197H42.9218V25.8038H26.2674V9.40954H31.0258V17.8174L48.3702 0.720603L51.7487 4.04629L34.3805 21.1197ZM25.8392 31.893L41.0661 38.357L39.0438 49.6925C38.7694 51.1334 37.9102 52.402 36.6646 53.2055C35.8112 53.7399 34.8209 54.0242 33.8095 54.0252C33.3677 54.0306 32.9273 53.9755 32.5009 53.8613C25.7254 52.103 19.5076 48.6963 14.419 43.9545C11.8551 41.5786 9.59408 38.9047 7.68582 35.9916C5.72008 32.9538 4.12304 29.6996 2.9274 26.2956C0.548103 19.5319 -0.264795 12.3301 0.548196 5.21728C0.636853 3.77286 1.33573 2.43093 2.47535 1.51687C3.66258 0.65033 5.15981 0.303046 6.61517 0.55664L18.1543 2.54737V20.0892L14.2048 22.5717C15.0429 24.8806 16.1444 27.0884 17.4881 29.1528C18.7837 31.1949 20.3167 33.0813 22.0562 34.7737L25.8392 31.893ZM26.5289 37.2795L21.7705 40.8628L20.3192 39.5981C17.6503 37.2918 15.3344 34.6176 13.4433 31.6587C11.5492 28.7512 10.0758 25.5982 9.06552 22.2905L8.5183 20.5808L13.2767 17.5362V6.48182L5.66325 5.17028V5.17028C5.54687 5.13577 5.42275 5.13577 5.30637 5.17028C5.19737 5.26074 5.12204 5.38434 5.09224 5.52158C4.37239 11.9746 5.12841 18.5045 7.3049 24.6326C8.40414 27.6905 9.85707 30.6138 11.6351 33.3449C13.3574 35.9092 15.3775 38.2672 17.6545 40.371C22.1523 44.6106 27.6699 47.6567 33.6903 49.2239C33.8202 49.2747 33.9649 49.2747 34.0948 49.2239C34.2222 49.1214 34.3138 48.9822 34.3565 48.8257L35.7364 41.1439L26.5289 37.2795Z"
-                  fill="#2DA771" />
-              </svg>
-            </a>
-            <a href="#"><svg width="69" height="41" viewBox="0 0 69 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M37.9791 40.315C39.7046 40.315 40.41 39.1647 40.3902 37.7226C40.3024 32.2913 42.4131 29.3675 46.2238 33.1781C50.4396 37.394 51.3122 40.315 56.4319 40.315H65.4982C67.7874 40.315 68.6884 39.5784 68.6884 38.4224C68.6884 35.9774 64.6624 31.6624 61.2512 28.4948C56.4744 24.0609 56.2505 23.956 60.3644 18.6182C65.467 11.9914 72.1421 3.50021 66.2376 3.50021H54.9586C52.7714 3.50021 52.6127 4.73266 51.8336 6.56858C49.0145 13.2181 43.6569 21.8311 41.6227 20.5137C39.4949 19.1396 40.4695 13.697 40.631 5.60812C40.6735 3.47188 40.6622 2.0071 37.3983 1.2478C35.6162 0.836985 33.8823 0.666992 32.273 0.666992C25.8331 0.666992 21.3907 3.36705 23.9151 3.83736C28.366 4.66749 27.9382 14.2976 26.9013 18.4568C25.0937 25.6985 18.2996 12.7223 15.4692 6.25976C14.7864 4.70716 14.5768 3.50021 12.1402 3.50021H2.9181C1.52415 3.50021 0.688354 3.95352 0.688354 4.96215C0.688354 6.66774 9.07467 24.0014 17.0813 32.6427C24.8897 41.0715 32.6074 40.315 37.9791 40.315Z"
-                  fill="#2DA771" />
-              </svg>
-            </a>
-          </div>
-          <div class="footer-contract">
+          <div class="main-contract">
+            <h1>Заключить договор и забыть о вопросах логистики</h1>
             <button class="btn modal-btn">Оставить заявку</button>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
-  <div class="overlay" id="overlay">
-    <div class="overlay-blocker" id="overlay-blocker"></div>
-    <div class="modal-content" id="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть" id="modal-content-close">
-        Закрыть
-      </button>
-      <img class="small-circle" src="./img/small-circle.svg" />
-      <h2 class="modal-content-title">Подготовить договор</h2>
-      <form class="form-user" action="#" method="POST">
-        <input class="icon-user" type="email" name="email" placeholder="Email" />
-        <input class="phone-user" type="tel" name="phone" placeholder="Телефон" />
-        <button class="btn btn-send" type="submit">Отправить</button>
-      </form>
-    </div>
-  </div>
-  <script src="./js/index.js"></script>
-</body>
+      </header>
+      <main>
+        <div class="about-us__mobile">
+          <div class="container">
+            <h2>О нас</h2>
+            <ul class="about-us__mobile-icons" id="about-us__mobile-icons">
+              <li class="active">
+                <p>Миссия</p>
+                <img src="./img/mission.svg" />
+              </li>
+              <li>
+                <p>Ценности</p>
+                <img src="./img/values.svg" />
+              </li>
+              <li>
+                <p>Цифры</p>
+                <img src="./img/numbers.svg" />
+              </li>
+            </ul>
+          </div>
+          <ul class="about-us__mobile-values" id="about-us__mobile-values">
+            <li class="active">
+              Мы оказываем людям и компаниям спектр услуг своевременной и
+              гарантированной доставки, постоянно повышая уровень сервиса,
+              внедряя новые технологии, эффективно используя внутренний
+              потенциал и внешние ресурсы.
+            </li>
+            <li>Test2</li>
+            <li>
+              2000 год основания 1 000 000 активных пользователей 6 000 курьеров
+              150 000 отправлений в день 21 страна 36 000+ населенных пунктов на
+              весь мир
+            </li>
+          </ul>
+        </div>
+        <div class="container-bg__about-us container-bg">
+          <div class="container">
+            <div id="about-us" class="about-us">
+              <div class="about-us__left">
+                <h2>О нас</h2>
+                <img src="./img/about-us.svg" />
+              </div>
+              <div class="about-us__right">
+                <div class="mission">
+                  <img src="./img/mission.svg" />
+                  <span>
+                    <h3>Миссия</h3>
+                    Мы оказываем людям и компаниям спектр услуг своевременной и
+                    гарантированной доставки, постоянно повышая уровень сервиса,
+                    внедряя новые технологии, эффективно используя внутренний
+                    потенциал и внешние ресурсы.
+                  </span>
+                </div>
 
+                <div class="values" id="about-values">
+                  <img src="./img/values.svg" />
+                  <span>
+                    <h3>Ценности</h3>
+                    <span id="about-values-descr"
+                      ><b>СДЭК – это МЫ.</b> Мы любим свою работу и делаем ее
+                      хорошо. Мы помогаем и поддерживаем друг друга. От каждого
+                      из нас зависит результат.</span
+                    >
+                  </span>
+                </div>
+                <ul class="about-values-dots" id="about-values-dots">
+                  <li class="active"></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+                <div class="numbers">
+                  <img src="./img/numbers.svg" />
+                  <span>
+                    <h3>Цифры</h3>
+                    <ul>
+                      <li>2000 год основания</li>
+                      <li>1 000 000 активных пользователей</li>
+                      <li>6 000 курьеров</li>
+                      <li>150 000 отправлений в день</li>
+                      <li>21 страна</li>
+                      <li>36 000+ населенных пунктов на весь мир</li>
+                    </ul>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="cooperation" class="cooperation">
+            <h2>Сотрудничество</h2>
+            <form class="appointment-form" action="#" method="post">
+              <input
+                type="tel"
+                name="phone"
+                value=""
+                placeholder="Ваш телефон"
+              />
+              <input type="email" name="email" value="" placeholder="E-mail" />
+              <input
+                type="text"
+                name="name"
+                value=""
+                placeholder="Имя заполнителя анкеты"
+              />
+              <input
+                type="text"
+                name="organization"
+                value=""
+                placeholder="Наименование организации"
+              />
+              <input type="url" name="site" value="" placeholder="Ваш сайт" />
+              <input type="text" name="inn" value="" placeholder="ИНН" />
+              <input
+                type="text"
+                name="city"
+                value=""
+                placeholder="Из какого города планируются отправки?"
+              />
+              <div class="coop-bottom">
+                <input
+                  accept="image/*"
+                  id="real-file"
+                  type="file"
+                  name="file"
+                  value=""
+                />
+                <label id="custom-button" for="real-file">
+                  <svg
+                    width="22"
+                    height="24"
+                    viewBox="0 0 22 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.2475 17.5357V23.7138H0.653931V17.5357H2.71329V21.6544H19.1882V17.5357H21.2475ZM16.8302 6.10624L15.3681 7.56839L11.9804 4.17044V19.1935H9.92105V4.17044L6.5334 7.56839L5.07126 6.10624L10.9507 0.237061L16.8302 6.10624Z"
+                      fill="#2DA771"
+                    />
+                  </svg>
+                </label>
+                <span id="custom-text">
+                  <div class="custom-text">Реквизиты</div>
+                </span>
+
+                <button class="btn" type="submit">
+                  <span>Отправить</span>
+                  <svg
+                    width="22"
+                    height="14"
+                    viewBox="0 0 23 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.0315 2.68259C14.641 2.29206 14.641 1.6589 15.0315 1.26837C15.4221 0.877848 16.0552 0.877848 16.4458 1.26837L22.4458 7.26837C22.8363 7.6589 22.8363 8.29206 22.4458 8.68259L16.4458 14.6826C16.0552 15.0731 15.4221 15.0731 15.0315 14.6826C14.641 14.2921 14.641 13.6589 15.0315 13.2684L19.3244 8.97546H1.74943C1.19106 8.97546 0.738403 8.52775 0.738403 7.97546C0.738403 7.42318 1.19106 6.97546 1.74943 6.97546H19.3244L15.0315 2.68259Z"
+                      fill="#2DA771"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="container">
+          <div id="advantages" class="advantages">
+            <h2>Преимущества</h2>
+            <div class="advantages-items">
+              <div class="advantages__item">
+                <img src="./img/advantage1.svg" />
+                <p>Персональный менеджер</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/advantage2.svg" />
+                <p>Бесплатное хранение на пунктах выдачи в течение 14 дней</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/advantage3.svg" />
+                <p>Бесплатная упаковка - Пакеты А3, А4, конверты А4</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/advantage4.svg" />
+                <p>Бесплатный осмотр</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/advantage5.svg" />
+                <p>Бесплатная примерка</p>
+              </div>
+              <div class="advantages__item">
+                <img src="./img/advantage6.svg" />
+                <p>Бесплатный частный выкуп</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-clients-bg container-bg">
+          <div class="container">
+            <div id="our-clients" class="our-clients">
+              <h2>Наши клиенты</h2>
+              <p>Нам доверяют и мы из года в год поддерживаем это доверие</p>
+              <div class="our-clients-items">
+                <div class="flex-block">
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client1.svg" width="170px" />
+                  </a>
+                </div>
+                <div class="flex-block">
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client2.svg" width="170px" />
+                  </a>
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client3.svg" width="70px" />
+                  </a>
+                </div>
+                <div class="flex-block">
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client4.svg" width="170px" />
+                  </a>
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client5.svg" width="170px" height="100px" />
+                  </a>
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client6.svg" width="170px" />
+                  </a>
+                </div>
+                <div class="flex-block">
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client7.svg" width="100px" />
+                  </a>
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client8.svg" width="170px" />
+                  </a>
+                </div>
+                <div class="flex-block">
+                  <a href="#" class="our-clients__item">
+                    <img src="./img/client9.svg" width=" 85px" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-bg container-bg">
+          <div class="container">
+            <div id="reviews" class="reviews">
+              <img class="reviews-bg__pct" src="./img/quotes.svg" />
+              <h2>Реальные отзывы от реальных клиентов</h2>
+              <div class="review review-efe">
+                <div class="review__item">
+                  <img src="./img/client6.svg" width="140px" />
+                  <input type="checkbox" class="read-more-state" id="post-1" />
+                  <p class="read-more-wrap review-txt">
+                    Работа с косметической продукцией требует особой
+                    деликатности. Нужна аккуратность в обращении с товаром и
+                    слаженная работа логистики. Все эти качества, в полной мере,
+                    присутствуют у службы доставки СДЭК. Ежемесячно, мы
+                    отправляем внушительные объёмы посылок и можем с
+                    уверенностью сказать, что логистические решения от СДЭК нас
+                    ещё не подводили.
+                    <span class="read-more-target"
+                      >От небольшого письма для партнёра до нескольких тяжёлых
+                      коробок, с нашей продукцией, мы пересылаем посредствам
+                      СДЭК. Широкая сеть пунктов выдачи заказа по всей
+                      территории РФ, а также за её пределами, делает отправку
+                      заказов для наших клиентов весьма удобной. Высокий
+                      клиентский сервис, а также удобный личный кабинет,
+                      благоприятно отражаются на скорости работы сервиса
+                      доставки. Наши клиенты довольны доставкой своих заказов,
+                      мы довольны логистической службой СДЭК. Большое вам
+                      спасибо!</span
+                    >
+                  </p>
+                  <p class="read-more-wrap review-txt2">
+                    Работа с косметической продукцией требует особой
+                    деликатности. Нужна аккуратность в обращении с товаром и
+                    слаженная работа логистики. Все эти качества, в полной мере,
+                    присутствуют у службы доставки СДЭК.<span
+                      class="read-more-target"
+                    >
+                      Ежемесячно, мы отправляем внушительные объёмы посылок и
+                      можем с уверенностью сказать, что логистические решения от
+                      СДЭК нас ещё не подводили. От небольшого письма для
+                      партнёра до нескольких тяжёлых коробок, с нашей
+                      продукцией, мы пересылаем посредствам СДЭК. Широкая сеть
+                      пунктов выдачи заказа по всей территории РФ, а также за её
+                      пределами, делает отправку заказов для наших клиентов
+                      весьма удобной. Высокий клиентский сервис, а также удобный
+                      личный кабинет, благоприятно отражаются на скорости работы
+                      сервиса доставки. Наши клиенты довольны доставкой своих
+                      заказов, мы довольны логистической службой СДЭК. Большое
+                      вам спасибо!</span
+                    >
+                  </p>
+                  <label for="post-1" class="read-more-trigger"></label>
+                </div>
+                <span class="reviewer">
+                  <h3>Гласов Дмитрий</h3>
+                  Основатель косметической компании Efe L'arome
+                </span>
+              </div>
+              <div class="review review-swiss">
+                <div class="review__item">
+                  <img src="./img/client7.svg" width="80px" />
+                  <input type="checkbox" class="read-more-state" id="post-2" />
+                  <p class="read-more-wrap review-txt">
+                    Мы работаем со СДЭК уже более 6 лет, росли вместе с
+                    компанией, переживали вместе взлеты и падения. На данном
+                    этапе мы передали более 80% нашей логистики в руки Компании.
+                    Наша продукция очень требовательна к бережной доставке. К
+                    сожалению в человеческом факторе неизбежны утери и
+                    повреждения, но на данный момент, количество таких случаев
+                    минимально.<span class="read-more-target">
+                      Мы благодарны, что компания предоставила нам такого
+                      замечательного закрепленного менеджера, все вопросы,
+                      проблемы и претензии решаются очень быстро. Я очень рада,
+                      что наши пути сошлись, и мы имеем такого партнера как
+                      СДЭК.</span
+                    >
+                  </p>
+                  <p class="read-more-wrap review-txt2">
+                    Мы работаем со СДЭК уже более 6 лет, росли вместе с
+                    компанией, переживали вместе взлеты и падения. На данном
+                    этапе мы передали более 80% нашей логистики в руки Компании.
+                    Наша продукция очень требовательна к бережной доставке.<span
+                      class="read-more-target"
+                    >
+                      К сожалению в человеческом факторе неизбежны утери и
+                      повреждения, но на данный момент, количество таких случаев
+                      минимально. Мы благодарны, что компания предоставила нам
+                      такого замечательного закрепленного менеджера, все
+                      вопросы, проблемы и претензии решаются очень быстро. Я
+                      очень рада, что наши пути сошлись, и мы имеем такого
+                      партнера как СДЭК.</span
+                    >
+                  </p>
+                  <label for="post-2" class="read-more-trigger"></label>
+                </div>
+                <span class="reviewer">
+                  <h3>Варзова Наталья</h3>
+                  Основатель магазина SWISSTRADE
+                </span>
+              </div>
+              <div class="review review-wars">
+                <div class="review__item">
+                  <img src="./img/client9.svg" width="80px" />
+                  <input type="checkbox" class="read-more-state" id="post-3" />
+                  <p class="read-more-wrap review-txt">
+                    Вот уже более 4 лет курьерская компания СДЭК помогает нам
+                    доставлять по просторам Вселенной товары межгалактического
+                    масштаба - световые мечи нашего собственного
+                    производства.<span class="read-more-target">
+                      Скорость доставки заказов сравнима со скоростью
+                      Тысячелетнего Сокола, а качество обслуживания - с
+                      мастерством Джедаев. Именно поэтому наши световые мечи
+                      доставляются всегда вовремя, а главное - качественно. Да
+                      прибудет с вами СДЭК!</span
+                    >
+                  </p>
+
+                  <p class="read-more-wrap review-txt2">
+                    Вот уже более 4 лет курьерская компания СДЭК помогает нам
+                    доставлять по просторам Вселенной товары межгалактического
+                    масштаба - световые мечи нашего собственного
+                    производства.<span class="read-more-target">
+                      Скорость доставки заказов сравнима со скоростью
+                      Тысячелетнего Сокола, а качество обслуживания - с
+                      мастерством Джедаев. Именно поэтому наши световые мечи
+                      доставляются всегда вовремя, а главное - качественно. Да
+                      прибудет с вами СДЭК!</span
+                    >
+                  </p>
+                  <label for="post-3" class="read-more-trigger"></label>
+                </div>
+                <span class="reviewer">
+                  <h3>Команда мастерской световых мечей Warsabers</h3>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="fulfillment" class="fulfillment">
+            <h2>Фулфилмент</h2>
+            <p>Хранение и доставка товаров для интернет-магазинов</p>
+            <div class="fulfillment-items">
+              <div class="fulfillment__item">
+                <h3>Фулфилмент СДЭК ― это комплекс услуг в едином пакете.</h3>
+                <span
+                  >С ним вы сможете освободить время и заниматься только
+                  продажами, а логистику, складские операции и пересылку ваших
+                  товаров доверьте нам.
+                </span>
+              </div>
+              <div class="fulfillment-pct fulfillment__item">
+                <img src="./img/fulfillment-plane.svg" />
+              </div>
+              <div class="fulfillment__item">
+                <h3>Мы возьмем на себя:</h3>
+                <ul>
+                  <li>хранение ваших товаров,</li>
+                  <li>прием и комплектацию заказов,</li>
+                  <li>доставку вашим покупателям,</li>
+                  <li>получение оплаты,</li>
+                  <li>работу с возвратами,</li>
+                  <li>проверку качества товара от поставщика.</li>
+                </ul>
+              </div>
+              <div class="fulfillment-pct fulfillment__item">
+                <img src="./img/fulfillment-map.svg" />
+              </div>
+              <div class="fulfillment__item">
+                <h3>Почему Фулфилмент СДЭК?</h3>
+                <h4>Нам доверяют 60 000+ интернет-магазинов, потому что:</h4>
+                <ul>
+                  <li>СДЭК работает 20 лет на рынке доставки,</li>
+                  <li>у нас 2700+ пунктов выдачи заказов по всему миру,</li>
+                  <li>доставляем в 40 000+ населенных пунктов РФ от 1 дня,</li>
+                  <li>есть представительства в 21 стране мира,</li>
+                  <li>принимаем оплату наложенным платежом,</li>
+                  <li>
+                    оформляем полные и частичные возвраты — повышаем лояльность
+                    ваших клиентов.
+                  </li>
+                </ul>
+              </div>
+              <div class="fulfillment-pct fulfillment__item">
+                <img src="./img/fulfillment-phone.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div id="contacts" class="contacts">
+            <h2>Контакты</h2>
+            <div class="contacts__item-mobile">
+              <div class="contacts-info">
+                <h3>Торхачев Кирилл Андреевич</h3>
+                <h4>Генеральный директор</h4>
+                <div class="phone-email">
+                  <div class="contact-phone">
+                    <a class="phone-number" href="tel:+79167184024"
+                      >+7(916)718-40-24
+                    </a>
+                  </div>
+                  <div class="contact-email">
+                    <a href="mailto:torhachev.k@cdek.ru">torhachev.k@cdek.ru</a>
+                    <a href="mailto:contract@cdek-top.ru"
+                      >contract@cdek-top.ru</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contacts__item">
+              <div class="contacts-info">
+                <h3>Торхачев Кирилл Андреевич</h3>
+                <h4>Генеральный директор</h4>
+                <div class="phone-email">
+                  <div class="contact-phone">
+                    <a class="phone-number" href="tel:+79167184024"
+                      >+7(916)718-40-24
+                    </a>
+                  </div>
+                  <div class="contact-email">
+                    <a href="mailto:torhachev.k@cdek.ru">torhachev.k@cdek.ru</a>
+                    <a href="mailto:contract@cdek-top.ru"
+                      >contract@cdek-top.ru</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer container-bg">
+        <div class="container">
+          <div class="footer">
+            <div class="copyrigh">© 2021 CDEK-TOP</div>
+            <div class="footer-links">
+              <a href="#">
+                <svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M44.0742 12.4149C44.0742 14.1714 42.6502 15.5949 40.8942 15.5949C39.1381 15.5949 37.7142 14.1714 37.7142 12.4149C37.7142 10.6585 39.1381 9.23493 40.8942 9.23493C42.6506 9.23493 44.0742 10.6585 44.0742 12.4149ZM26.7485 35.3937C21.8701 35.3937 17.9153 31.439 17.9153 26.5605C17.9153 21.6821 21.8701 17.7274 26.7485 17.7274C31.627 17.7274 35.5817 21.6821 35.5817 26.5605C35.5817 31.439 31.627 35.3937 26.7485 35.3937ZM26.7485 12.9524C19.2329 12.9524 13.1404 19.0449 13.1404 26.5605C13.1404 34.0762 19.2329 40.1687 26.7485 40.1687C34.2642 40.1687 40.3567 34.0762 40.3567 26.5605C40.3567 19.0449 34.2642 12.9524 26.7485 12.9524ZM26.7485 4.83552C33.8244 4.83552 34.6625 4.86243 37.4566 4.98996C40.0404 5.10797 41.4436 5.53942 42.3773 5.90255C43.6141 6.38328 44.4969 6.95759 45.4244 7.88509C46.3519 8.81217 46.9262 9.69495 47.4069 10.9322C47.7697 11.8659 48.2015 13.2691 48.3195 15.8529C48.4471 18.6474 48.474 19.4855 48.474 26.5614C48.474 33.6373 48.4471 34.4753 48.3195 37.2694C48.2015 39.8532 47.7701 41.2565 47.4069 42.1902C46.9262 43.427 46.3519 44.3097 45.4244 45.2373C44.4973 46.1648 43.6145 46.7391 42.3773 47.2198C41.4436 47.5825 40.0404 48.0144 37.4566 48.1324C34.6625 48.2599 33.8244 48.2868 26.7485 48.2868C19.6722 48.2868 18.8341 48.2599 16.0401 48.1324C13.4563 48.0144 12.053 47.5829 11.1193 47.2198C9.88253 46.7391 8.99975 46.1648 8.07225 45.2373C7.14516 44.3102 6.57044 43.4274 6.08972 42.1902C5.727 41.2565 5.29513 39.8532 5.17712 37.2694C5.04959 34.4749 5.02268 33.6369 5.02268 26.5614C5.02268 19.4855 5.04959 18.6474 5.17712 15.8529C5.29513 13.2691 5.72658 11.8659 6.08972 10.9322C6.57044 9.69537 7.14475 8.81259 8.07225 7.88509C8.99933 6.95759 9.88211 6.38328 11.1193 5.90255C12.053 5.53984 13.4563 5.10797 16.0401 4.98996C18.8346 4.86243 19.6726 4.83552 26.7485 4.83552ZM26.7485 0.0605469C19.5517 0.0605469 18.6491 0.0911875 15.8227 0.219961C13.0021 0.348734 11.0754 0.79675 9.39021 1.4518C7.64742 2.12879 6.16963 3.03517 4.69639 4.50841C3.22316 5.98164 2.31678 7.45943 1.63979 9.20222C0.984738 10.8879 0.536723 12.8141 0.407949 15.6347C0.279176 18.4611 0.248535 19.3637 0.248535 26.5605C0.248535 33.7574 0.279176 34.66 0.407949 37.4864C0.536723 40.307 0.984738 42.2332 1.63979 43.9189C2.31678 45.6617 3.22316 47.1395 4.69639 48.6127C6.16963 50.0859 7.64742 50.9919 9.39021 51.6693C11.0759 52.3243 13.0021 52.7724 15.8227 52.9011C18.6491 53.0299 19.5517 53.0605 26.7485 53.0605C33.9454 53.0605 34.848 53.0299 37.6744 52.9011C40.495 52.7724 42.4212 52.3243 44.1069 51.6693C45.8497 50.9919 47.3274 50.0859 48.8007 48.6127C50.2739 47.1395 51.1799 45.6617 51.8573 43.9189C52.5123 42.2332 52.9603 40.307 53.0891 37.4864C53.2179 34.66 53.2485 33.7574 53.2485 26.5605C53.2485 19.3637 53.2179 18.4611 53.0891 15.6347C52.9603 12.8141 52.5123 10.8879 51.8573 9.20222C51.1799 7.45943 50.2739 5.98164 48.8007 4.50841C47.3274 3.03517 45.8497 2.1292 44.1069 1.4518C42.4212 0.79675 40.495 0.348734 37.6744 0.219961C34.848 0.0911875 33.9454 0.0605469 26.7485 0.0605469Z"
+                    fill="#2DA771"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.3787 14.3803C20.354 14.3803 14.6432 20.0911 14.641 27.1136C14.6388 29.98 15.4802 32.1265 16.8913 34.3724L15.6061 39.0717L20.4247 37.8063C22.5844 39.0872 24.6448 39.8557 27.3699 39.8579C34.388 39.8579 40.1053 34.1449 40.1075 27.1246C40.1097 20.0867 34.4211 14.3825 27.3787 14.3803ZM34.8694 32.5858C34.5514 33.4802 33.021 34.2951 32.2856 34.4055C31.6253 34.5049 30.7906 34.5446 29.8741 34.2531C29.3176 34.0764 28.6043 33.8402 27.6923 33.4471C23.852 31.7886 21.3455 27.9218 21.1534 27.6679C20.9613 27.4117 19.5899 25.592 19.5899 23.7083C19.5899 21.8246 20.5792 20.8971 20.9304 20.5151C21.2815 20.133 21.6944 20.0359 21.9506 20.0359L22.6838 20.0491C22.9179 20.0602 23.2337 19.9608 23.545 20.7072C23.863 21.4735 24.6293 23.3572 24.7243 23.5493C24.8192 23.7414 24.8833 23.9645 24.7552 24.2207C24.6271 24.4768 24.5631 24.6358 24.3732 24.8589L23.799 25.5302C23.6069 25.7201 23.4081 25.9277 23.6312 26.3119C23.8542 26.6962 24.6227 27.9483 25.76 28.9642C27.2219 30.2693 28.4564 30.6734 28.8384 30.8633C29.2204 31.0532 29.4435 31.0223 29.6687 30.7684C29.8918 30.5122 30.6249 29.6509 30.8811 29.2667C31.1373 28.8847 31.3912 28.9465 31.7424 29.0746C32.0935 29.2027 33.975 30.1279 34.357 30.3201C34.7391 30.5122 34.9952 30.6072 35.0902 30.7662C35.1896 30.9252 35.1896 31.6914 34.8694 32.5858ZM27.3102 0.750488C12.6756 0.750488 0.810242 12.6159 0.810242 27.2505C0.810242 41.8851 12.6756 53.7505 27.3102 53.7505C41.9449 53.7505 53.8102 41.8851 53.8102 27.2505C53.8102 12.6159 41.9449 0.750488 27.3102 0.750488ZM27.3743 42.4438C24.8104 42.4438 22.2841 41.799 20.047 40.58L11.927 42.7088L14.1 34.7699C12.7595 32.4467 12.0529 29.8099 12.0551 27.1114C12.0573 18.6645 18.9296 11.7922 27.3743 11.7922C31.4729 11.7944 35.3199 13.3888 38.2106 16.2839C41.1035 19.179 42.6957 23.0282 42.6935 27.1224C42.6913 35.5693 35.819 42.4438 27.3743 42.4438Z"
+                    fill="#2DA771"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="54"
+                  height="54"
+                  viewBox="0 0 54 54"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M31.2306 23.9998C31.2306 25.7488 30.6387 28.0389 29.7201 29.8342C27.4919 34.2067 22.9559 34.178 22.9559 29.5251C22.9559 27.7893 23.5522 25.5523 24.4731 23.8276C26.7278 19.5765 31.2306 20.2412 31.2306 23.9998ZM53.9366 27.2505C53.9366 41.8851 42.0713 53.7505 27.4366 53.7505C12.802 53.7505 0.936646 41.8851 0.936646 27.2505C0.936646 12.6159 12.802 0.750488 27.4366 0.750488C42.0713 0.750488 53.9366 12.6159 53.9366 27.2505ZM42.895 24.6137C42.895 17.4455 37.0849 12.2449 29.0796 12.2449C18.1109 12.2449 11.9783 19.1989 11.9783 27.8644C11.9783 35.9734 17.4263 42.2561 27.4896 42.2561C33.0546 42.2561 36.5968 40.6529 38.8007 39.4118L37.2836 37.2233C35.0267 38.5329 32.3126 39.732 27.8849 39.732C20.3126 39.732 15.2246 34.8759 15.2246 27.6458C15.2246 15.0274 29.3601 12.7219 35.5721 16.4473C41.3668 20.0734 41.146 28.7654 36.8574 32.0889C34.574 33.913 32.0013 33.8534 32.836 30.4194C32.836 30.4194 35.5125 20.5062 35.8261 19.433H32.8139L32.2155 21.5353C31.6016 19.8018 30.133 18.6755 27.9954 18.6755C23.5389 18.6755 19.7759 23.5118 19.7759 29.238C19.7759 33.0584 21.7921 35.4302 25.0318 35.4302C27.8651 35.4302 29.338 33.8269 30.2523 32.3981C29.5898 38.7979 42.895 35.8365 42.895 24.6137Z"
+                    fill="#2DA771"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="52"
+                  height="55"
+                  viewBox="0 0 52 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M34.3805 21.1197H42.9218V25.8038H26.2674V9.40954H31.0258V17.8174L48.3702 0.720603L51.7487 4.04629L34.3805 21.1197ZM25.8392 31.893L41.0661 38.357L39.0438 49.6925C38.7694 51.1334 37.9102 52.402 36.6646 53.2055C35.8112 53.7399 34.8209 54.0242 33.8095 54.0252C33.3677 54.0306 32.9273 53.9755 32.5009 53.8613C25.7254 52.103 19.5076 48.6963 14.419 43.9545C11.8551 41.5786 9.59408 38.9047 7.68582 35.9916C5.72008 32.9538 4.12304 29.6996 2.9274 26.2956C0.548103 19.5319 -0.264795 12.3301 0.548196 5.21728C0.636853 3.77286 1.33573 2.43093 2.47535 1.51687C3.66258 0.65033 5.15981 0.303046 6.61517 0.55664L18.1543 2.54737V20.0892L14.2048 22.5717C15.0429 24.8806 16.1444 27.0884 17.4881 29.1528C18.7837 31.1949 20.3167 33.0813 22.0562 34.7737L25.8392 31.893ZM26.5289 37.2795L21.7705 40.8628L20.3192 39.5981C17.6503 37.2918 15.3344 34.6176 13.4433 31.6587C11.5492 28.7512 10.0758 25.5982 9.06552 22.2905L8.5183 20.5808L13.2767 17.5362V6.48182L5.66325 5.17028V5.17028C5.54687 5.13577 5.42275 5.13577 5.30637 5.17028C5.19737 5.26074 5.12204 5.38434 5.09224 5.52158C4.37239 11.9746 5.12841 18.5045 7.3049 24.6326C8.40414 27.6905 9.85707 30.6138 11.6351 33.3449C13.3574 35.9092 15.3775 38.2672 17.6545 40.371C22.1523 44.6106 27.6699 47.6567 33.6903 49.2239C33.8202 49.2747 33.9649 49.2747 34.0948 49.2239C34.2222 49.1214 34.3138 48.9822 34.3565 48.8257L35.7364 41.1439L26.5289 37.2795Z"
+                    fill="#2DA771"
+                  />
+                </svg>
+              </a>
+              <a href="#"
+                ><svg
+                  width="69"
+                  height="41"
+                  viewBox="0 0 69 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37.9791 40.315C39.7046 40.315 40.41 39.1647 40.3902 37.7226C40.3024 32.2913 42.4131 29.3675 46.2238 33.1781C50.4396 37.394 51.3122 40.315 56.4319 40.315H65.4982C67.7874 40.315 68.6884 39.5784 68.6884 38.4224C68.6884 35.9774 64.6624 31.6624 61.2512 28.4948C56.4744 24.0609 56.2505 23.956 60.3644 18.6182C65.467 11.9914 72.1421 3.50021 66.2376 3.50021H54.9586C52.7714 3.50021 52.6127 4.73266 51.8336 6.56858C49.0145 13.2181 43.6569 21.8311 41.6227 20.5137C39.4949 19.1396 40.4695 13.697 40.631 5.60812C40.6735 3.47188 40.6622 2.0071 37.3983 1.2478C35.6162 0.836985 33.8823 0.666992 32.273 0.666992C25.8331 0.666992 21.3907 3.36705 23.9151 3.83736C28.366 4.66749 27.9382 14.2976 26.9013 18.4568C25.0937 25.6985 18.2996 12.7223 15.4692 6.25976C14.7864 4.70716 14.5768 3.50021 12.1402 3.50021H2.9181C1.52415 3.50021 0.688354 3.95352 0.688354 4.96215C0.688354 6.66774 9.07467 24.0014 17.0813 32.6427C24.8897 41.0715 32.6074 40.315 37.9791 40.315Z"
+                    fill="#2DA771"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="footer-contract">
+              <button class="btn modal-btn">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="overlay" id="overlay">
+      <div class="overlay-blocker" id="overlay-blocker"></div>
+      <div class="modal-content" id="modal-content">
+        <button
+          class="modal-content-close"
+          type="button"
+          title="Закрыть"
+          id="modal-content-close"
+        >
+          Закрыть
+        </button>
+        <img class="small-circle" src="./img/small-circle.svg" />
+        <h2 class="modal-content-title">Подготовить договор</h2>
+        <form class="form-user" action="#" method="POST">
+          <input
+            class="icon-user"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="phone-user"
+            type="tel"
+            name="phone"
+            placeholder="Телефон"
+          />
+          <button class="btn btn-send" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
 </html>

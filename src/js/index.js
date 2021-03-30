@@ -15,4 +15,5 @@ import "../css/footer.scss"
 // Import JS files
 import "./modal"
 import "./slider"
+import "./mobile-slider"
 import "./upload-button"
