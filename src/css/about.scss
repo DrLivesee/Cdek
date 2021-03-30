@@ -1,5 +1,27 @@
 /* about us */
 
+.about-us__mobile {
+  width: 100%;
+  background-color: #F4F5F7;
+  padding: 10px 23px 0px 23px;
+
+  @media (min-width: 1170px) {
+    display: none;
+  }
+
+  &-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+
+  }
+}
+
 .container-bg__about-us {
   width: 100%;
   margin-left: auto;
