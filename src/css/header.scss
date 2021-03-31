@@ -54,6 +54,21 @@
             margin-bottom: 20px;
         }
 
+        .cdek-logo {
+
+            @media (max-width: 1169px) {
+                width: 130px;
+            }
+
+            img {
+
+                @media (max-width: 1169px) {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+        }
+
 
 
         img {
@@ -188,7 +203,7 @@
 
         h1 {
             display: block;
-            font-size: 24px;
+            font-size: 26px;
             width: 100%;
             line-height: 33px;
             margin-bottom: 30px;
