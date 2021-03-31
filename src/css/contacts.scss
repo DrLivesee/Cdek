@@ -14,7 +14,7 @@
     font-weight: bold;
     line-height: 48px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 50px;
 
     @media (min-width: 1170px) {
@@ -29,10 +29,11 @@
     background-repeat: no-repeat;
     width: 792px;
     min-height: 490px;
-    margin-top: 140px;
+    margin-top: 190px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 10px;
 
     @media (min-width: 1170px) {
       display: block;
@@ -45,7 +46,8 @@
     margin-left: auto;
     margin-right: auto;
     min-height: 650px;
-    width: 323px;
+    width: 100%;
+    max-width: 323px;
 
 
     @media (min-width: 1170px) {

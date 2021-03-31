@@ -37,7 +37,7 @@
     width: 100%;
     font-size: 18px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 80px;
 
     @media (min-width: 1170px) {
       display: block;
@@ -56,6 +56,10 @@
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+
+    @media (min-width: 1170px) {
+      margin-bottom: 30px;
+    }
 
 
     &:hover {

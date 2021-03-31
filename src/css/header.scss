@@ -8,10 +8,11 @@
     }
 
     .big-circle {
+        display: block;
         width: 154px;
         // width: 174px;
         top: 110px;
-        left: 55%;
+        left: 45%;
         position: absolute;
         filter: blur(25px);
         opacity: 0.4;
@@ -188,7 +189,7 @@
         h1 {
             display: block;
             font-size: 24px;
-            width: 310px;
+            width: 100%;
             line-height: 33px;
             margin-bottom: 30px;
 

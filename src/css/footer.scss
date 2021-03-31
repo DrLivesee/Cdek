@@ -3,7 +3,11 @@
 .main-footer {
   background-color: black;
   min-height: 240px;
-  padding-top: 15px;
+  padding-top: 35px;
+
+  @media (min-width: 1170px) {
+    padding-top: 15px;
+  }
 
   .footer {
     min-height: 225px;
@@ -17,27 +21,56 @@
     }
   }
 
-  .copyrigh {
+  .data-footer {
+    display: none;
+    flex-direction: column;
     color: #d9dbe1;
     font-size: 14px;
-    margin-bottom: 20px;
-    align-self: flex-end;
-    display: none;
+    line-height: 24px;
 
     @media (min-width: 1170px) {
-      display: block;
+      display: flex;
     }
+
+
+    .official-site {
+      display: flex;
+      margin-bottom: 5px;
+
+      a:nth-child(2) {
+        margin: 0;
+        padding: 0;
+        padding-top: 20px;
+        color: #d9dbe1;
+      }
+    }
+
+    .requisites {
+      padding-left: 72px;
+      margin-bottom: 20px;
+    }
+
+    .copyrigh {
+      padding-left: 72px;
+
+      margin-bottom: 10px;
+
+      @media (min-width: 1170px) {
+        display: block;
+      }
+    }
+
   }
 
   .footer-links {
-    width: 60%;
+    width: 200px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    @media (min-width: 1170px) {
-      width: 380px;
+    @media (min-width: 600px) {
+      width: 420px;
       flex-wrap: nowrap;
     }
 
@@ -47,10 +80,18 @@
       padding-top: 3px;
       border-radius: 10px;
       transition: 0.5s;
+      margin-bottom: 25px;
+
+      @media (min-width: 1170px) {
+        margin-bottom: 0px;
+      }
+
 
       &:hover {
-        transition: 0.5s;
-        transform: scale(1.2);
+        @media (min-width: 1170px) {
+          transition: 0.5s;
+          transform: scale(1.2);
+        }
       }
 
       &:active path {

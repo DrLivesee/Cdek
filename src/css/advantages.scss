@@ -1,7 +1,7 @@
 /* advantages */
 
 .advantages {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 20px;
 
   @media (min-width: 1170px) {
@@ -21,7 +21,7 @@
   }
 
   .advantages-items {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -40,13 +40,13 @@
     padding-top: 20px;
     width: 360px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     transition: all 0.2s ease-in-out;
     border-radius: 20px;
     min-height: 200px;
 
     @media (min-width: 1170px) {
-      margin-bottom: 70px;
+      margin-bottom: 80px;
     }
 
 
