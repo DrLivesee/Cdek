@@ -52,14 +52,43 @@
 
     .copyrigh {
       padding-left: 72px;
-
       margin-bottom: 10px;
+    }
 
-      @media (min-width: 1170px) {
-        display: block;
+  }
+
+  .data-footer__mobile {
+    color: #d9dbe1;
+    line-height: 24px;
+
+    @media (min-width: 1170px) {
+      display: none;
+    }
+
+    .official-site {
+      display: flex;
+      margin-bottom: 5px;
+      flex-direction: column;
+      align-items: center;
+
+      a:first-child {
+        margin-bottom: 15px;
       }
     }
 
+    .requisites {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .copyrigh {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #d9dbe1;
+    }
   }
 
   .footer-links {
@@ -70,7 +99,7 @@
     align-items: center;
 
     @media (min-width: 600px) {
-      width: 420px;
+      width: 460px;
       flex-wrap: nowrap;
     }
 
@@ -96,6 +125,24 @@
 
       &:active path {
         fill: #19965f;
+      }
+    }
+  }
+
+  .footer-contract {
+
+    .btn {
+      opacity: 1;
+      transition: all 0.1s ease-in-out;
+      margin-bottom: 20px;
+      margin-top: 10px;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &:active {
+        opacity: 0.8;
       }
     }
   }
