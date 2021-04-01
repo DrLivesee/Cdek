@@ -122,6 +122,28 @@
       }
     }
   }
+
+  .numbers {
+    list-style: none;
+    padding-left: 15px;
+
+    li {
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: -14px;
+        width: 7px;
+        height: 7px;
+        background-color: white;
+        border-radius: 50%;
+      }
+    }
+
+  }
 }
 
 .container-bg__about-us {
