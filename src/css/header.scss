@@ -89,7 +89,7 @@
             border: none;
             background-color: white;
             padding-left: 8px;
-            padding-right: 8px;
+            padding-right: 9px;
             padding-top: 11px;
             padding-bottom: 10px;
             height: 100%;
@@ -150,7 +150,6 @@
 
     .main-nav {
         display: flex;
-        // background-color: lightgray;
         background-color: rgba(220, 220, 220, 0.2);
         align-items: flex-start;
         flex-direction: column;
@@ -160,7 +159,7 @@
         left: 0px;
         width: 100%;
         z-index: 100;
-        padding-top: 6px;
+        padding-top: 5px;
 
         @media (min-width: 1170px) {
             width: auto;
