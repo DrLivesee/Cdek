@@ -227,7 +227,7 @@
                 line-height: 100px;
             }
 
-            .heading-opacity {
+            &.heading-opacity {
                 opacity: 0;
             }
         }
@@ -235,7 +235,7 @@
         .btn {
             opacity: 1;
 
-            .btn-opacity {
+            &.btn-opacity {
                 opacity: 0;
             }
         }
