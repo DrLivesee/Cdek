@@ -32,6 +32,11 @@
         position: absolute;
         filter: blur(25px);
         opacity: 0.4;
+        display: none;
+
+        @media (min-width: 600px) {
+            display: block;
+        }
 
         @media (min-width: 1170px) {
             width: auto;
@@ -84,6 +89,7 @@
             border: none;
             background-color: white;
             margin-left: 5px;
+            outline: none;
 
             @media (min-width: 1170px) {
                 display: none;
@@ -109,12 +115,17 @@
 
     .main-nav__mobile {
         position: relative;
+        display: none;
+
+        &--open {
+            display: block;
+        }
     }
 
     .main-nav {
-        display: none;
-        background-color: lightgray;
-        // background-color: rgba(220, 220, 220, 0.2);
+        display: flex;
+        // background-color: lightgray;
+        background-color: rgba(220, 220, 220, 0.3);
         align-items: flex-start;
         flex-direction: column;
         padding-left: 13px;
@@ -123,7 +134,7 @@
         left: 0px;
         width: 100%;
         z-index: 100;
-        padding-top: 5px;
+        padding-top: 6px;
 
         @media (min-width: 1170px) {
             width: auto;
@@ -138,14 +149,12 @@
             padding-top: 0px;
         }
 
-
-
         a {
             display: block;
             padding: 2px 2px 2px 2px;
             font-weight: bold;
             transition: all 0.15s ease-in-out;
-            margin-bottom: 29px;
+            margin-bottom: 33px;
             font-size: 14px;
 
             @media (min-width: 1170px) {
@@ -188,9 +197,11 @@
         &__mobile-open {
             display: none;
         }
+
     }
 
     .main-contract {
+        min-height: 391px;
         padding-top: 100px;
         padding-left: 25px;
         padding-bottom: 100px;
@@ -207,6 +218,7 @@
             width: 100%;
             line-height: 33px;
             margin-bottom: 30px;
+            opacity: 1;
 
             @media (min-width: 1170px) {
                 display: block;
@@ -214,6 +226,19 @@
                 font-size: 72px;
                 line-height: 100px;
             }
+
+            .heading-opacity {
+                opacity: 0;
+            }
         }
+
+        .btn {
+            opacity: 1;
+
+            .btn-opacity {
+                opacity: 0;
+            }
+        }
+
     }
 }
