@@ -88,17 +88,43 @@
             display: block;
             border: none;
             background-color: white;
-            margin-left: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            padding-top: 11px;
+            padding-bottom: 10px;
+            height: 100%;
             outline: none;
 
             @media (min-width: 1170px) {
                 display: none;
             }
 
+            &--bg {
+                background-color: rgba(220, 220, 220, 0.2);
+            }
+
             img {
                 width: 20px;
             }
+
+            .nav-open {
+                display: inline;
+
+                &--close {
+                    display: none;
+                }
+            }
+
+            .nav-close {
+                display: none;
+
+                &--open {
+                    display: inline;
+                }
+            }
         }
+
+
     }
 
     .main-logo .phone-number {
@@ -125,7 +151,7 @@
     .main-nav {
         display: flex;
         // background-color: lightgray;
-        background-color: rgba(220, 220, 220, 0.3);
+        background-color: rgba(220, 220, 220, 0.2);
         align-items: flex-start;
         flex-direction: column;
         padding-left: 13px;
@@ -150,12 +176,31 @@
         }
 
         a {
+            @keyframes nav {
+                0% {
+                    transform: translateX(-200px);
+                    color: #2da771;
+                    opacity: 0;
+                }
+
+                50% {
+                    transform: translateX(5px);
+                }
+
+                100% {
+                    transform: translateX(0px);
+                    opacity: 1;
+                    color: black;
+                }
+            }
+
             display: block;
             padding: 2px 2px 2px 2px;
             font-weight: bold;
             transition: all 0.15s ease-in-out;
             margin-bottom: 33px;
             font-size: 14px;
+            animation: nav 0.5s;
 
             @media (min-width: 1170px) {
                 margin-bottom: 0px;
@@ -229,6 +274,10 @@
 
             &.heading-opacity {
                 opacity: 0;
+
+                @media (min-width: 1170px) {
+                    opacity: 1;
+                }
             }
         }
 
@@ -237,6 +286,10 @@
 
             &.btn-opacity {
                 opacity: 0;
+
+                @media (min-width: 1170px) {
+                    opacity: 1;
+                }
             }
         }
 
