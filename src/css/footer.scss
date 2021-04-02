@@ -4,9 +4,11 @@
   background-color: black;
   min-height: 240px;
   padding-top: 35px;
+  width: 100%;
 
   @media (min-width: 1170px) {
     padding-top: 15px;
+    width: 100%;
   }
 
   .footer {
