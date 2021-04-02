@@ -143,6 +143,10 @@
         position: relative;
         display: none;
 
+        @media (min-width: 1170px) {
+            display: block;
+        }
+
         &--open {
             display: block;
         }
@@ -175,21 +179,30 @@
         }
 
         a {
-            @keyframes nav {
-                0% {
-                    transform: translateX(-200px);
-                    color: #2da771;
-                    opacity: 0;
-                }
 
-                50% {
-                    transform: translateX(5px);
-                }
+            @media (max-width: 1169px) {
+                @keyframes nav {
+                    0% {
 
-                100% {
-                    transform: translateX(0px);
-                    opacity: 1;
-                    color: black;
+                        transform: translateX(-200px);
+                        color: #2da771;
+                        opacity: 0;
+
+                    }
+
+                    50% {
+
+                        transform: translateX(5px);
+
+                    }
+
+                    100% {
+
+                        transform: translateX(0px);
+                        opacity: 1;
+                        color: black;
+
+                    }
                 }
             }
 
