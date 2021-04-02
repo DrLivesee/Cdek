@@ -4,6 +4,10 @@
   padding-top: 0px;
   padding-bottom: 60px;
 
+  @media (max-width: 360px) {
+    padding-bottom: 0px;
+  }
+
   @media (min-width: 1170px) {
     padding-top: 30px;
     padding-bottom: 200px;
@@ -49,6 +53,9 @@
     width: 100%;
     max-width: 323px;
 
+    @media (max-width: 360px) {
+      background-image: url("../img/contracts-bg-mobile2.png");
+    }
 
     @media (min-width: 1170px) {
       display: none;
@@ -99,6 +106,10 @@
     padding-left: 20px;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 360px) {
+      margin-top: 260px;
+    }
 
     @media (min-width: 1170px) {
       justify-content: space-between;
