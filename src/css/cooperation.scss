@@ -1,261 +1,262 @@
 /* Cooperation */
 
+.cooperation-bg {
+	width: 100%;
+	background-color: #2da771;
+	border-radius: 20px;
+
+	@media (min-width: 1170px) {
+		border-radius: 0px;
+	}
+}
+
 .cooperation {
-  padding-top: 30px;
-  position: relative;
-  border-radius: 60px;
-  background: linear-gradient(to bottom,
-      rgba(45, 167, 113, 0.65) 1%,
-      white 90%);
+	padding-top: 30px;
+	position: relative;
+	border-radius: 60px;
+	padding-bottom: 40px;
 
-  @media (min-width: 1170px) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: 100px;
-  }
+	@media (min-width: 1170px) {
+		padding-top: 50px;
+		padding-bottom: 80px;
+		border-radius: 100px;
+	}
 
-  h2 {
-    font-size: 24px;
-    text-align: center;
-    margin: 0px;
-    color: white;
-    margin-bottom: 30px;
-    font-weight: bold;
+	h2 {
+		font-size: 24px;
+		text-align: center;
+		margin: 0px;
+		color: white;
+		margin-bottom: 30px;
+		font-weight: bold;
 
-    @media (min-width: 1170px) {
-      font-size: 48px;
-      margin-bottom: 60px;
-    }
-  }
+		@media (min-width: 1170px) {
+			font-size: 48px;
+			margin-bottom: 60px;
+		}
+	}
 
-  form {
-    display: flex;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    margin-left: 60px;
-    margin-right: 60px;
+	form {
+		display: flex;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		margin-left: 60px;
+		margin-right: 60px;
 
-    @media (min-width: 1170px) {
-      margin-left: 260px;
-      margin-right: 260px;
-    }
-  }
+		@media (min-width: 1170px) {
+			margin-left: 260px;
+			margin-right: 260px;
+		}
+	}
 
-  input:not(:nth-child(8)) {
-    width: 100%;
-    outline: none;
-    border: 3px solid #2da771;
-    margin-bottom: 35px;
-    font-size: 24px;
-    padding: 20px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
+	input:not(:nth-child(8)) {
+		width: 100%;
+		outline: none;
+		border: 3px solid #1a8d5a;
+		border-radius: 10px;
+		margin-bottom: 35px;
+		font-size: 24px;
+		padding: 20px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.4);
 
+		@media (min-width: 1170px) {
+			padding-bottom: 15px;
+			padding-top: 15px;
+			border-radius: 20px;
+		}
 
-    @media (min-width:1170px) {
-      padding-bottom: 15px;
-      padding-top: 15px;
-    }
+		&::placeholder {
+			font-size: 14px;
 
-    &::placeholder {
-      font-size: 14px;
+			@media (min-width: 1170px) {
+				font-size: 24px;
+			}
+		}
+	}
 
-      @media (min-width: 1170px) {
-        font-size: 24px;
-      }
-    }
-  }
+	input:not(:nth-child(8)):focus {
+		border: 3px solid #157e51;
+		transition: all 0.3s ease-in-out;
+	}
 
-  input:not(:nth-child(8)):focus {
-    border: 3px solid #157e51;
-    transition: all 0.3s ease-in-out;
+	.coop-bottom {
+		width: 100%;
+		display: flex;
+		margin-top: 0px;
+		align-items: center;
 
-  }
+		@media (min-width: 1170px) {
+			margin-top: 20px;
+		}
+	}
 
-  .coop-bottom {
-    width: 100%;
-    display: flex;
-    margin-top: 0px;
-    align-items: center;
+	input[type='file'] {
+		display: none;
+	}
 
-    @media (min-width: 1170px) {
-      margin-top: 20px;
-    }
-  }
+	label {
+		width: 40px;
+		height: 36px;
+		border: 3px solid #1a8d5a;
+		border-radius: 10px;
+		text-align: center;
+		padding-top: 5px;
+		align-content: center;
+		margin-right: 5px;
 
-  input[type="file"] {
-    display: none;
-  }
+		background-color: white;
+		box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 
-  label {
-    width: 40px;
-    height: 36px;
-    border: 3px solid #2da771;
-    border-radius: 10px;
-    text-align: center;
-    padding-top: 5px;
-    align-content: center;
-    margin-right: 5px;
+		@media (min-width: 1170px) {
+			width: 60px;
+			height: 60px;
+			padding-top: 15px;
+			border-radius: 18px;
+			margin-right: 10px;
+			transition: all 0.2s ease-in-out;
+		}
 
-    background-color: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+		svg {
+			display: none;
 
-    @media (min-width: 1170px) {
-      width: 60px;
-      height: 60px;
-      padding-top: 15px;
-      border-radius: 20px;
-      margin-right: 10px;
-      transition: all 0.2s ease-in-out;
-    }
+			@media (min-width: 1170px) {
+				display: inline;
+				width: auto;
+			}
+		}
 
-    svg {
-      display: none;
+		.picture-file {
+			@media (min-width: 1170px) {
+				display: none;
+			}
+		}
 
-      @media (min-width: 1170px) {
-        display: inline;
-        width: auto;
-      }
-    }
+		.picture-file2 {
+			display: none;
 
-    .picture-file {
+			@media (min-width: 1170px) {
+				display: none;
+			}
+		}
 
-      @media (min-width: 1170px) {
-        display: none;
-      }
+		&:hover {
+			@media (min-width: 1170px) {
+				cursor: pointer;
+				background-color: #1a8d5a;
+			}
 
-    }
+			path {
+				fill: white;
+			}
+		}
 
-    .picture-file2 {
-      display: none;
+		&:active {
+			background-color: #137449;
+			border-color: #137449;
 
-      @media (min-width: 1170px) {
-        display: none;
-      }
+			path {
+				@media (min-width: 1170px) {
+					fill: white;
+				}
+			}
 
-    }
+			.picture-file {
+				display: none;
+			}
 
+			.picture-file2 {
+				display: inline;
 
-    &:hover {
+				@media (min-width: 1170px) {
+					display: none;
+				}
+			}
+		}
+	}
 
-      @media (min-width: 1170px) {
-        cursor: pointer;
-        background-color: #2da771;
-      }
+	#custom-text {
+		word-wrap: break-word;
+		min-height: 50px;
+		width: 120px;
+		display: inline;
+		align-self: center;
+		font-family: sans-serif;
+		color: black;
+		display: flex;
+		align-items: center;
+		font-size: 8px;
 
-      path {
-        fill: white;
-      }
-    }
+		@media (min-width: 1170px) {
+			font-size: 14px;
+		}
+	}
 
-    &:active {
-      background-color: #19965f;
-      border-color: #19965f;
+	input::placeholder {
+		opacity: 0.4;
+		font-weight: bold;
+	}
 
-      path {
-        @media (min-width: 1170px) {
-          fill: white;
-        }
-      }
+	.appointment-form {
+		.btn {
+			height: 36px;
+			width: 150px;
+			color: #2da771;
+			background-color: white;
+			border: 3px solid #1a8d5a;
+			border-radius: 10px;
+			opacity: 1;
+			padding: 0px;
+			font-size: 20px;
+			font-weight: bold;
+			box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+			transition: background-color 0.15s ease-in-out;
 
-      .picture-file {
-        display: none;
-      }
+			@media (min-width: 1170px) {
+				height: 60px;
+				width: 200px;
+				margin-left: 20px;
+				border-radius: 18px;
+			}
 
-      .picture-file2 {
-        display: inline;
+			svg {
+				display: none;
 
-        @media (min-width: 1170px) {
-          display: none;
-        }
-      }
-    }
-  }
+				@media (min-width: 1170px) {
+					display: inline;
+					width: auto;
+				}
+			}
 
-  #custom-text {
-    word-wrap: break-word;
-    min-height: 50px;
-    width: 120px;
-    display: inline;
-    align-self: center;
-    font-family: sans-serif;
-    color: #aaa;
-    display: flex;
-    align-items: center;
-    font-size: 8px;
+			span {
+				font-size: 14px;
+				text-align: center;
 
+				@media (min-width: 1170px) {
+					margin-right: 20px;
+					font-size: 20px;
+				}
+			}
 
-    @media (min-width: 1170px) {
-      font-size: 14px;
-    }
-  }
+			&:hover {
+				background-color: #1a8d5a;
+				color: white;
 
-  input::placeholder {
-    opacity: 0.4;
-    font-weight: bold;
-  }
+				path {
+					fill: white;
+				}
+			}
 
-  .appointment-form {
-    .btn {
-      height: 36px;
-      width: 150px;
-      color: #2da771;
-      background-color: white;
-      border: 3px solid #2da771;
-      border-radius: 10px;
-      opacity: 1;
-      padding: 0px;
-      font-size: 20px;
-      font-weight: bold;
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
-      transition: background-color 0.15s ease-in-out;
+			&:active {
+				border-color: #137449;
+				background-color: #137449;
+				color: white;
 
-
-      @media (min-width: 1170px) {
-        height: 60px;
-        width: 200px;
-        margin-left: 20px;
-        border-radius: 20px;
-      }
-
-      svg {
-        display: none;
-
-        @media (min-width: 1170px) {
-          display: inline;
-          width: auto;
-        }
-      }
-
-      span {
-        font-size: 14px;
-        text-align: center;
-
-        @media (min-width: 1170px) {
-          margin-right: 20px;
-          font-size: 20px;
-        }
-      }
-
-      &:hover {
-        background-color: #2da771;
-        color: white;
-
-        path {
-          fill: white;
-        }
-      }
-
-      &:active {
-        border-color: #19965f;
-        background-color: #19965f;
-        color: white;
-
-        path {
-          fill: white;
-        }
-      }
-    }
-  }
+				path {
+					fill: white;
+				}
+			}
+		}
+	}
 }

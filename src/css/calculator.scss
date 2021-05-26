@@ -1,0 +1,32 @@
+.calculator {
+	padding-top: 120px;
+	padding-bottom: 50px;
+
+	.calc-item {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	ul {
+		list-style: none;
+		padding-left: 15px;
+		width: 50%;
+
+		li {
+			position: relative;
+			margin-bottom: 10px;
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 5px;
+				left: -14px;
+				width: 7px;
+				height: 7px;
+				background-color: black;
+				border-radius: 50%;
+			}
+		}
+	}
+}
