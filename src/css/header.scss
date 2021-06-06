@@ -1,309 +1,295 @@
 .main-header {
-    width: 100%;
-
-    @media (min-width: 1170px) {
-        width: 1170px;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .big-circle {
-        display: block;
-        width: 154px;
-        // width: 174px;
-        top: 110px;
-        left: 45%;
-        position: absolute;
-        filter: blur(25px);
-        opacity: 0.4;
-
-        @media (min-width: 1170px) {
-            width: auto;
-            top: 220px;
-            left: auto;
-            right: 10px;
-        }
-    }
-
-    .small-circle {
-        width: 73px;
-        top: 270px;
-        left: 30%;
-        position: absolute;
-        filter: blur(25px);
-        opacity: 0.4;
-        display: none;
-
-        @media (min-width: 600px) {
-            display: block;
-        }
-
-        @media (min-width: 1170px) {
-            width: auto;
-            left: auto;
-            top: 640px;
-            right: 500px;
-        }
-    }
-
-    .main-logo {
-        width: 100%;
-        margin-bottom: 0px;
-        margin-left: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        @media (min-width: 1170px) {
-            width: 720px;
-            margin-bottom: 20px;
-        }
-
-        .cdek-logo {
-
-            @media (max-width: 1169px) {
-                width: 130px;
-            }
-
-            img {
-
-                @media (max-width: 1169px) {
-                    display: block;
-                    margin-left: auto;
-                }
-            }
-        }
-
-
-
-        img {
-            width: 79px;
-
-            @media (min-width: 1170px) {
-                width: auto;
-            }
-        }
-
-        .main-nav__mobile-open {
-            display: block;
-            border: none;
-            background-color: white;
-            padding-left: 8px;
-            padding-right: 9px;
-            padding-top: 11px;
-            padding-bottom: 10px;
-            height: 100%;
-            outline: none;
-
-            @media (min-width: 1170px) {
-                display: none;
-            }
-
-            &--bg {
-                background-color: rgba(220, 220, 220, 0.2);
-            }
-
-            img {
-                width: 20px;
-            }
-
-            .nav-open {
-                display: inline;
-
-                &--close {
-                    display: none;
-                }
-            }
-
-            .nav-close {
-                display: none;
-
-                &--open {
-                    display: inline;
-                }
-            }
-        }
-
-
-    }
-
-    .main-logo .phone-number {
-        font-size: 10px;
-        font-weight: bold;
-        margin-right: 10px;
-
-
-        @media (min-width: 1170px) {
-            font-size: 20px;
-
-        }
-    }
-
-    .main-nav__mobile {
-        position: relative;
-        display: none;
-
-        @media (min-width: 1170px) {
-            display: block;
-        }
-
-        &--open {
-            display: block;
-        }
-    }
-
-    .main-nav {
-        display: flex;
-        background-color: rgba(220, 220, 220, 0.2);
-        align-items: flex-start;
-        flex-direction: column;
-        padding-left: 13px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        z-index: 100;
-        padding-top: 5px;
-
-        @media (min-width: 1170px) {
-            width: auto;
-            background-color: white;
-            flex-direction: row;
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-left: 0px;
-            position: relative;
-            padding-top: 0px;
-        }
-
-        a {
-
-            @media (max-width: 1169px) {
-                @keyframes nav {
-                    0% {
-
-                        transform: translateX(-200px);
-                        color: #2da771;
-                        opacity: 0;
-
-                    }
-
-                    50% {
-
-                        transform: translateX(5px);
-
-                    }
-
-                    100% {
-
-                        transform: translateX(0px);
-                        opacity: 1;
-                        color: black;
-
-                    }
-                }
-            }
-
-            display: block;
-            padding: 2px 2px 2px 2px;
-            font-weight: bold;
-            transition: all 0.15s ease-in-out;
-            margin-bottom: 33px;
-            font-size: 14px;
-            animation: nav 0.5s;
-
-            @media (min-width: 1170px) {
-                margin-bottom: 0px;
-                font-size: 18px;
-            }
-
-            &:first-child {
-                padding-left: 0px;
-            }
-
-            &:last-child {
-                padding-right: 0px;
-            }
-
-            &:hover {
-                @media (min-width: 1170px) {
-                    color: darkgreen;
-                }
-            }
-
-            &:active {
-                color: #2da771;
-            }
-
-            &.link-mobile-hidden {
-                @media (min-width: 1170px) {
-                    display: none;
-                }
-            }
-
-            &.link-desktop-hidden {
-                @media (max-width: 1169px) {
-                    display: none;
-                }
-            }
-
-        }
-
-        &__mobile-open {
-            display: none;
-        }
-
-    }
-
-    .main-contract {
-        min-height: 391px;
-        padding-top: 100px;
-        padding-left: 25px;
-        padding-bottom: 100px;
-
-        @media (min-width: 1170px) {
-            padding-top: 160px;
-            padding-bottom: 200px;
-
-        }
-
-        h1 {
-            display: block;
-            font-size: 26px;
-            width: 100%;
-            line-height: 33px;
-            margin-bottom: 30px;
-            opacity: 1;
-
-            @media (min-width: 1170px) {
-                display: block;
-                width: 750px;
-                font-size: 72px;
-                line-height: 100px;
-            }
-
-            &.heading-opacity {
-                opacity: 0;
-
-                @media (min-width: 1170px) {
-                    opacity: 1;
-                }
-            }
-        }
-
-        .btn {
-            opacity: 1;
-
-            &.btn-opacity {
-                opacity: 0;
-
-                @media (min-width: 1170px) {
-                    opacity: 1;
-                }
-            }
-        }
-
-    }
+	width: 100%;
+
+	@media (min-width: 1170px) {
+		width: 1170px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	.big-circle {
+		display: block;
+		width: 154px;
+		// width: 174px;
+		top: 110px;
+		left: 45%;
+		position: absolute;
+		filter: blur(25px);
+		opacity: 0.4;
+
+		@media (min-width: 1170px) {
+			width: auto;
+			top: 220px;
+			left: auto;
+			right: 10px;
+		}
+	}
+
+	.small-circle {
+		width: 73px;
+		top: 270px;
+		left: 30%;
+		position: absolute;
+		filter: blur(25px);
+		opacity: 0.4;
+		display: none;
+
+		@media (min-width: 600px) {
+			display: block;
+		}
+
+		@media (min-width: 1170px) {
+			width: auto;
+			left: auto;
+			top: 640px;
+			right: 500px;
+		}
+	}
+
+	.main-logo {
+		width: 100%;
+		margin-bottom: 0px;
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		@media (min-width: 1170px) {
+			width: 720px;
+			margin-bottom: 20px;
+		}
+
+		.cdek-logo {
+			@media (max-width: 1169px) {
+				width: 130px;
+			}
+
+			img {
+				@media (max-width: 1169px) {
+					display: block;
+					margin-left: auto;
+				}
+			}
+		}
+
+		img {
+			width: 79px;
+
+			@media (min-width: 1170px) {
+				width: auto;
+			}
+		}
+
+		.main-nav__mobile-open {
+			display: block;
+			border: none;
+			background-color: white;
+			padding-left: 8px;
+			padding-right: 9px;
+			padding-top: 11px;
+			padding-bottom: 10px;
+			height: 100%;
+			outline: none;
+
+			@media (min-width: 1170px) {
+				display: none;
+			}
+
+			&--bg {
+				background-color: rgba(220, 220, 220, 0.2);
+			}
+
+			img {
+				width: 20px;
+			}
+
+			.nav-open {
+				display: inline;
+
+				&--close {
+					display: none;
+				}
+			}
+
+			.nav-close {
+				display: none;
+
+				&--open {
+					display: inline;
+				}
+			}
+		}
+	}
+
+	.main-logo .phone-number {
+		font-size: 10px;
+		font-weight: bold;
+		margin-right: 10px;
+
+		@media (min-width: 1170px) {
+			font-size: 20px;
+		}
+	}
+
+	.main-nav__mobile {
+		position: relative;
+		display: none;
+
+		@media (min-width: 1170px) {
+			display: block;
+		}
+
+		&--open {
+			display: block;
+		}
+	}
+
+	.main-nav {
+		display: flex;
+		background-color: rgba(220, 220, 220, 0.2);
+		align-items: flex-start;
+		flex-direction: column;
+		padding-left: 13px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: 100;
+		padding-top: 5px;
+
+		@media (min-width: 1170px) {
+			width: auto;
+			background-color: white;
+			flex-direction: row;
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-left: 0px;
+			position: relative;
+			padding-top: 0px;
+		}
+
+		a {
+			@media (max-width: 1169px) {
+				@keyframes nav {
+					0% {
+						transform: translateX(-200px);
+						color: #2da771;
+						opacity: 0;
+					}
+
+					50% {
+						transform: translateX(5px);
+					}
+
+					100% {
+						transform: translateX(0px);
+						opacity: 1;
+						color: black;
+					}
+				}
+			}
+
+			display: block;
+			padding: 2px 2px 2px 2px;
+			font-weight: bold;
+			transition: all 0.15s ease-in-out;
+			margin-bottom: 26px;
+			font-size: 14px;
+			animation: nav 0.5s;
+
+			@media (min-width: 1170px) {
+				margin-bottom: 0px;
+				font-size: 18px;
+			}
+
+			&:first-child {
+				margin-top: 2px;
+
+				@media (min-width: 1170px) {
+					padding-left: 0px;
+					margin-top: 0px;
+				}
+			}
+
+			&:last-child {
+				padding-right: 0px;
+			}
+
+			&:hover {
+				@media (min-width: 1170px) {
+					color: darkgreen;
+				}
+			}
+
+			&:active {
+				color: #2da771;
+			}
+
+			&.link-mobile-hidden {
+				@media (min-width: 1170px) {
+					display: none;
+				}
+			}
+
+			&.link-desktop-hidden {
+				@media (max-width: 1169px) {
+					display: none;
+				}
+			}
+		}
+
+		&__mobile-open {
+			display: none;
+		}
+	}
+
+	.main-contract {
+		min-height: 391px;
+		padding-top: 100px;
+		padding-left: 25px;
+		padding-bottom: 100px;
+
+		@media (min-width: 1170px) {
+			padding-top: 160px;
+			padding-bottom: 200px;
+		}
+
+		h1 {
+			display: block;
+			font-size: 26px;
+			width: 100%;
+			line-height: 33px;
+			margin-bottom: 30px;
+			opacity: 1;
+
+			@media (min-width: 1170px) {
+				display: block;
+				width: 750px;
+				font-size: 72px;
+				line-height: 100px;
+			}
+
+			&.heading-opacity {
+				opacity: 0;
+
+				@media (min-width: 1170px) {
+					opacity: 1;
+				}
+			}
+		}
+
+		.btn {
+			opacity: 1;
+
+			&.btn-opacity {
+				opacity: 0;
+
+				@media (min-width: 1170px) {
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
