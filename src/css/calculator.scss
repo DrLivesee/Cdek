@@ -88,12 +88,14 @@
 		}
 
 		.btn {
+			width: 160px;
 			margin: 0 auto;
 			margin-top: 20px;
 
 			@media (min-width: 1170px) {
 				margin: 0;
 				margin-top: 20px;
+				width: 210px;
 			}
 		}
 	}
@@ -116,8 +118,14 @@
 			position: relative;
 			margin-bottom: 14px;
 			line-height: 26px;
-			color: #2da771;
-			font-weight: bold;
+
+			&:first-child {
+				font-weight: bold;
+			}
+
+			strong {
+				color: #2da771;
+			}
 
 			&:before {
 				content: '';
